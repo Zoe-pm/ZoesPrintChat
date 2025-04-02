@@ -6,11 +6,9 @@ import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import ChatWidget from "@/components/ChatWidget";
 import { useState } from "react";
 
 export default function Home() {
-  const [isChatOpen, setIsChatOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -20,7 +18,7 @@ export default function Home() {
         setIsMobileMenuOpen={setIsMobileMenuOpen} 
       />
       <main className="flex-grow">
-        <Hero setIsChatOpen={setIsChatOpen} />
+        <Hero />
         <Features />
         <HowItWorks />
         <About />
@@ -28,10 +26,6 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-      <ChatWidget 
-        isOpen={isChatOpen} 
-        setIsOpen={setIsChatOpen} 
-      />
     </div>
   );
 }

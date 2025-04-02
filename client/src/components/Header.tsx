@@ -56,25 +56,25 @@ export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }: Header
               onClick={() => handleNavClick("features")} 
               className="font-heading font-medium hover:text-primary transition-all"
             >
-              Features
+              Services
             </button>
             <button 
               onClick={() => handleNavClick("how-it-works")} 
               className="font-heading font-medium hover:text-primary transition-all"
             >
-              How it Works
+              Wie es funktioniert
             </button>
             <button 
               onClick={() => handleNavClick("about")} 
               className="font-heading font-medium hover:text-primary transition-all"
             >
-              About
+              Über uns
             </button>
             <button 
               onClick={() => handleNavClick("contact")} 
               className="font-heading font-medium hover:text-primary transition-all"
             >
-              Contact
+              Kontakt
             </button>
           </nav>
           
@@ -97,25 +97,25 @@ export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }: Header
                 onClick={() => handleNavClick("features")}
                 className="font-heading font-medium py-2 hover:text-primary transition-all text-left"
               >
-                Features
+                Services
               </button>
               <button
                 onClick={() => handleNavClick("how-it-works")}
                 className="font-heading font-medium py-2 hover:text-primary transition-all text-left"
               >
-                How it Works
+                Wie es funktioniert
               </button>
               <button
                 onClick={() => handleNavClick("about")}
                 className="font-heading font-medium py-2 hover:text-primary transition-all text-left"
               >
-                About
+                Über uns
               </button>
               <button
                 onClick={() => handleNavClick("contact")}
                 className="font-heading font-medium py-2 hover:text-primary transition-all text-left"
               >
-                Contact
+                Kontakt
               </button>
             </div>
           </div>

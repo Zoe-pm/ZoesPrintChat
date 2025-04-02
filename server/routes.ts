@@ -54,12 +54,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Chat endpoints
   app.get("/api/chat", async (req: Request, res: Response) => {
     try {
-      // Get or create session ID
-      let sessionId = req.session.id;
-      if (!sessionId) {
-        sessionId = crypto.randomUUID();
-        req.session.id = sessionId;
-      }
+      // Generate a simple sessionId if none exists
+      const sessionId = req.headers["x-session-id"] as string || crypto.randomUUID();
       
       // Get messages for this session
       const messages = await storage.getMessagesBySessionId(sessionId);
@@ -77,6 +73,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         const updatedMessages = await storage.getMessagesBySessionId(sessionId);
         
         return res.json({ 
+          sessionId,
           messages: updatedMessages.map(msg => ({
             id: msg.id.toString(),
             sender: msg.sender,
@@ -88,6 +85,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Return existing messages
       res.json({ 
+        sessionId,
         messages: messages.map(msg => ({
           id: msg.id.toString(),
           sender: msg.sender,
@@ -103,18 +101,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.post("/api/chat", async (req: Request, res: Response) => {
     try {
-      const { message } = req.body;
+      const { message, sessionId: clientSessionId } = req.body;
       
       if (!message) {
         return res.status(400).json({ message: "Message is required" });
       }
       
-      // Get or create session ID
-      let sessionId = req.session.id;
-      if (!sessionId) {
-        sessionId = crypto.randomUUID();
-        req.session.id = sessionId;
-      }
+      // Use sessionId from request body or header, or generate a new one
+      const sessionId = clientSessionId || 
+                        (req.headers["x-session-id"] as string) || 
+                        crypto.randomUUID();
       
       // Save user message
       const userMessageData = {
@@ -148,7 +144,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
         id: botMessage.id.toString(),
         sender: botMessage.sender,
         text: botMessage.text,
-        timestamp: botMessage.timestamp.toISOString()
+        timestamp: botMessage.timestamp.toISOString(),
+        sessionId
       });
     } catch (error) {
       console.error("Error handling chat message:", error);
