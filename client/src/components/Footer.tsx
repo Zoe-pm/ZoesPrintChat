@@ -27,7 +27,7 @@ export default function Footer() {
         defaultLanguage: "en",
         initialMessages: [
           "Schön dass Du da bist!",
-          "Ich bin Chatty. Wie kann ich Dir helfen?"
+          "Wie kann ich helfen?"
         ],
         theme: {
           primaryColor: "#EC4899", // Rosa für Buttons und Akzente
