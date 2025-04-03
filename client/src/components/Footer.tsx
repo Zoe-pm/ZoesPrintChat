@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 
 export default function Footer() {
@@ -13,7 +14,31 @@ export default function Footer() {
     script.textContent = `
       import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
       createChat({
-        webhookUrl: 'https://zoebahati.app.n8n.cloud/webhook/df8f156c-bbaa-4bdd-b797-1820544069e7/chat'
+        webhookUrl: 'https://zoebahati.app.n8n.cloud/webhook/df8f156c-bbaa-4bdd-b797-1820544069e7/chat',
+        webhookConfig: {
+          method: "POST",
+          headers: {},
+        },
+        target: "#n8n-chat",
+        mode: "window",
+        chatInputKey: "chatInput",
+        chatSessionKey: "sessionId",
+        metadata: {},
+        showWelcomeScreen: false,
+        defaultLanguage: "en",
+        initialMessages: [
+          "Hallo 👋",
+          "My name is Nathan. How can I assist you today?",
+        ],
+        i18n: {
+          en: {
+            title: "Hallo!",
+            subtitle: "Start a chat. We're here to help you 24/7.",
+            footer: "",
+            getStarted: "New Conversation",
+            inputPlaceholder: "Type your question..",
+          },
+        },
       });
     `;
     document.body.appendChild(script);
@@ -22,33 +47,6 @@ export default function Footer() {
       document.head.removeChild(link);
       document.body.removeChild(script);
     };
-    createChat({
-      webhookUrl: "",
-      webhookConfig: {
-        method: "POST",
-        headers: {},
-      },
-      target: "#n8n-chat",
-      mode: "window",
-      chatInputKey: "chatInput",
-      chatSessionKey: "sessionId",
-      metadata: {},
-      showWelcomeScreen: false,
-      defaultLanguage: "en",
-      initialMessages: [
-        "Hallo 👋",
-        "My name is Nathan. How can I assist you today?",
-      ],
-      i18n: {
-        en: {
-          title: "Hallo!",
-          subtitle: "Start a chat. We're here to help you 24/7.",
-          footer: "",
-          getStarted: "New Conversation",
-          inputPlaceholder: "Type your question..",
-        },
-      },
-    });
   }, []);
 
   return (
