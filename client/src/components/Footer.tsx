@@ -31,16 +31,22 @@ export default function Footer() {
         ],
         theme: {
           styles: {
-            "--n8n-primary": "rgb(236, 72, 153)",
-            "--n8n-primary-light": "rgba(236, 72, 153, 0.1)",
-            "--n8n-secondary": "rgb(147, 51, 234)",
-            "--n8n-text": "rgb(55, 65, 81)",
+            "--n8n-primary": "#EC4899", // Primary Rosa
+            "--n8n-primary-light": "#fce7f3", // Sehr helles Rosa
+            "--n8n-secondary": "#9333EA", // Secondary Lila
+            "--n8n-text": "#374151", // Text Grau
             "--n8n-background": "#ffffff",
-            "--n8n-bubble-user-background": "rgba(236, 72, 153, 0.1)",
+            "--n8n-bubble-user-background": "#fce7f3", // Helles Rosa für User Bubbles
             "--n8n-bubble-bot-background": "#ffffff",
-            "--n8n-bubble-user-text": "rgb(55, 65, 81)",
-            "--n8n-bubble-bot-text": "rgb(55, 65, 81)",
-            "--n8n-header-background": "rgb(236, 72, 153)",
+            "--n8n-bubble-user-text": "#374151",
+            "--n8n-bubble-bot-text": "#374151",
+            "--n8n-header-background": "linear-gradient(to right, #EC4899, #9333EA)", // Gradient wie Website
+            "--n8n-border": "#EC4899", // Primary Rosa für Borders
+            "--n8n-button-background": "#EC4899", // Primary Rosa für Buttons
+            "--n8n-button-text": "#ffffff",
+            "--n8n-input-background": "#ffffff",
+            "--n8n-input-text": "#374151",
+            "--n8n-input-border": "#EC4899",
           }
         },
         i18n: {
