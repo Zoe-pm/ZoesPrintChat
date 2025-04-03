@@ -16,17 +16,18 @@ export default function Hero() {
               Dein individueller KI-Bot wartet schon!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button 
+              <button
                 onClick={() => {
                   const element = document.getElementById("contact");
                   if (element) {
                     const offset = 80;
                     const elementPosition = element.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - offset;
-                    
+                    const offsetPosition =
+                      elementPosition + window.pageYOffset - offset;
+
                     window.scrollTo({
                       top: offsetPosition,
-                      behavior: "smooth"
+                      behavior: "smooth",
                     });
                   }
                 }}
@@ -34,17 +35,18 @@ export default function Hero() {
               >
                 Kontakt aufnehmen →
               </button>
-              <button 
+              <button
                 onClick={() => {
                   const element = document.getElementById("how-it-works");
                   if (element) {
                     const offset = 80;
                     const elementPosition = element.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - offset;
-                    
+                    const offsetPosition =
+                      elementPosition + window.pageYOffset - offset;
+
                     window.scrollTo({
                       top: offsetPosition,
-                      behavior: "smooth"
+                      behavior: "smooth",
                     });
                   }
                 }}
@@ -56,19 +58,25 @@ export default function Hero() {
           </div>
           <div className="relative z-10">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-6 border border-white/20">
-              <h3 className="font-heading font-bold text-2xl mb-4">Was ich für dich baue:</h3>
+              <h3 className="font-heading font-bold text-2xl mb-4">
+                Was ich für dich baue:
+              </h3>
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>Individuelle RAGbots (Retriever + Chatbot-Frontend)</span>
+                  <span>
+                    Individuelle RAGbots (Retriever + Chatbot-Frontend)
+                  </span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>LLM-Lösungen mit ChatGPT oder lokal (Ollama)</span>
+                  <span>LLM-Lösungen mit ChatGPT oder lokal </span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>Automatisierungen mit n8n</span>
+                  <span>
+                    Automatisierungen mit voller Daten- und Kostenkontrolle
+                  </span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
@@ -80,18 +88,20 @@ export default function Hero() {
                 </li>
               </ul>
               <div className="mt-6 pt-4 border-t border-white/20">
-                <p className="font-medium">Sag mir, was du brauchst – wir bauen's leicht & schön</p>
+                <p className="font-medium">
+                  Sag mir, was du brauchst – wir bauen's leicht & schön
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
+
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 w-20 h-20 rounded-full bg-white/10 animate-bounce duration-[3000ms]"></div>
       <div className="absolute bottom-40 left-10 w-12 h-12 rounded-full bg-white/10 animate-bounce duration-[3000ms] delay-1000"></div>
       <div className="absolute top-40 left-20 w-8 h-8 rounded-full bg-white/10 animate-bounce duration-[3000ms] delay-500"></div>
-      
+
       {/* Wave divider */}
       <WaveShape />
     </section>

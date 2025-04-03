@@ -17,9 +17,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col font-sans antialiased">
-      <Header 
-        isMobileMenuOpen={isMobileMenuOpen} 
-        setIsMobileMenuOpen={setIsMobileMenuOpen} 
+      <Header
+        isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
       />
       <main className="flex-grow">
         <Hero />
@@ -29,7 +29,11 @@ export default function Home() {
         <About />
         <Testimonials />
         <Contact />
-        {showImprint && <div id="imprint-modal"><Imprint /></div>}
+        {showImprint && (
+          <div id="imprint-modal">
+            <Imprint />
+          </div>
+        )}
         <Datenschutz />
       </main>
       <Footer />
