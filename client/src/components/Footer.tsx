@@ -30,10 +30,10 @@ export default function Footer() {
           "Ich bin Chatty. Wie kann ich Dir helfen?"
         ],
         theme: {
-          primaryColor: "#d1d5db", // Grau
-          backgroundColor: "#EC4899", // Rosa
-          textColor: "#9333EA", // Lila
-          secondaryColor: "#374151", // Dunkelgrau
+          primaryColor: "#EC4899", // Rosa für Buttons und Akzente
+          backgroundColor: "#FFFFFF", // Weißer Hintergrund für bessere Lesbarkeit
+          textColor: "#374151", // Dunkelgrau für Text
+          secondaryColor: "#9333EA", // Lila für sekundäre Elemente
         },
         i18n: {
           en: {
