@@ -6,10 +6,12 @@ import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Imprint from "@/components/Imprint";
 import { useState } from "react";
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showImprint, setShowImprint] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col font-sans antialiased">
@@ -24,6 +26,7 @@ export default function Home() {
         <About />
         <Testimonials />
         <Contact />
+        {showImprint && <div id="imprint-modal"><Imprint /></div>}
       </main>
       <Footer />
     </div>

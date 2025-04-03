@@ -128,10 +128,22 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/80 mb-4 md:mb-0">© {new Date().getFullYear()} Zoe Hagen • KI mit Herz & Hirn. Alle Rechte vorbehalten.</p>
+          <p className="text-white/80 mb-4 md:mb-0">© {new Date().getFullYear()} Zoë Bahati Hagen • KI mit Herz & Hirn. Alle Rechte vorbehalten.</p>
           <div className="flex space-x-4">
             <a href="#" className="text-white/80 hover:text-white transition-all">Datenschutz</a>
-            <a href="#" className="text-white/80 hover:text-white transition-all">Impressum</a>
+            <a 
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("imprint-modal");
+                if (element) {
+                  element.style.display = "block";
+                }
+              }} 
+              className="text-white/80 hover:text-white transition-all"
+            >
+              Impressum
+            </a>
           </div>
         </div>
       </div>
