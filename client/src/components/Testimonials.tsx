@@ -15,9 +15,9 @@ export default function Testimonials() {
       rating: 5
     },
     {
-      quote: "Unsere Prozesse sind endlich organisiert – dank Zoe's KI-Lösung! Wir bekommen viele Anfragen, oft wiederkehrend. Zoe hat einen maßgeschneiderten Bot gebaut, der uns sofort entlastet – vom Erstkontakt bis zur Terminvergabe. Das Beste: keine monatlichen Abo-Kosten und keine versteckten Spielereien. Einfach solide Technik, super Betreuung und eine sympathische Umsetzung.",
-      name: "Frank K., Inhaber eines Familienbetriebs im SHK-Bereich",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      quote: "Als Beraterin konnte ich mit meinem persönlichen RAGbot meinen Kundenstamm verdoppeln. Er beantwortet Erstanfragen, qualifiziert Leads und ich kann mich auf die wichtigen Gespräche konzentrieren.",
+      name: "Sophia Berger",
+      avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       rating: 5
     }
   ];
