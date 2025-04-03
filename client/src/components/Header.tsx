@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPrint, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 interface HeaderProps {
   isMobileMenuOpen: boolean;
@@ -48,7 +46,7 @@ export default function Header({
           {/* Logo */}
           <div className="flex items-center">
             <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-purple-500 flex items-center justify-center text-white mr-3">
-              <FontAwesomeIcon icon={faPrint} />
+              <span className="text-xs font-bold">KI</span>
             </div>
             <h1 className="text-2xl font-heading font-bold text-gray-800">
               <span className="text-primary">Zoe's</span> KI Toolbox
@@ -89,10 +87,9 @@ export default function Header({
               className="text-gray-800 focus:outline-none"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              <FontAwesomeIcon
-                icon={isMobileMenuOpen ? faTimes : faBars}
-                className="text-xl"
-              />
+              <span className="text-xl font-bold">
+                {isMobileMenuOpen ? "×" : "≡"}
+              </span>
             </button>
           </div>
         </div>

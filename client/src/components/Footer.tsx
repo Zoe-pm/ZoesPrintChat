@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRobot } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Footer() {
   return (
@@ -9,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-6">
               <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white mr-3">
-                <FontAwesomeIcon icon={faRobot} />
+                <span className="text-xs font-bold">KI</span>
               </div>
               <h3 className="text-xl font-heading font-bold">
                 <span className="text-white">Zoe's</span> KI Toolbox
