@@ -1,6 +1,30 @@
 
+import React, { useEffect } from 'react';
 
 export default function Footer() {
+  useEffect(() => {
+    // Load n8n chat script
+    const link = document.createElement('link');
+    link.href = 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.textContent = `
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+      createChat({
+        webhookUrl: 'https://zoebahati.app.n8n.cloud/webhook/df8f156c-bbaa-4bdd-b797-1820544069e7/chat'
+      });
+    `;
+    document.body.appendChild(script);
+
+    return () => {
+      document.head.removeChild(link);
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <footer className="py-12 px-6 bg-gradient-to-r from-primary to-purple-500 text-white">
       <div className="container mx-auto">
@@ -161,11 +185,3 @@ export default function Footer() {
     </footer>
   );
 }
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-  createChat({
-    webhookUrl: 'https://zoebahati.app.n8n.cloud/webhook/df8f156c-bbaa-4bdd-b797-1820544069e7/chat'
-  });
-</script>
