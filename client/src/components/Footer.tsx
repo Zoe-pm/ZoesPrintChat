@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 
 export default function Footer() {
@@ -27,16 +26,17 @@ export default function Footer() {
         showWelcomeScreen: false,
         defaultLanguage: "en",
         initialMessages: [
-          "Hallo 👋",
-          "My name is Nathan. How can I assist you today?",
+          "Schön dass Du da bist!",
+          "Ich bin Chatty. Wie kann ich Dir helfen?"
+        ,
         ],
         i18n: {
           en: {
-            title: "Hallo!",
-            subtitle: "Start a chat. We're here to help you 24/7.",
+            title: "Deine Printbox Assistenz",
+            subtitle: "24/7 erreichbar",
             footer: "",
-            getStarted: "New Conversation",
-            inputPlaceholder: "Type your question..",
+            getStarted: "Sprich mit mir",
+            inputPlaceholder: "Erzähl mir...",
           },
         },
       });
