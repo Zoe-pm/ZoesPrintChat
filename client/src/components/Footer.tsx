@@ -30,10 +30,15 @@ export default function Footer() {
           "Wie kann ich helfen?"
         ],
         theme: {
-          primaryColor: "#EC4899", // Rosa für Buttons und Akzente
-          backgroundColor: "#FFFFFF", // Weißer Hintergrund für bessere Lesbarkeit
-          textColor: "#374151", // Dunkelgrau für Text
-          secondaryColor: "#9333EA", // Lila für sekundäre Elemente
+          primaryColor: "rgb(236, 72, 153)", // Primary Rosa
+          backgroundColor: "#ffffff",
+          textColor: "rgb(55, 65, 81)", // Text Grau
+          secondaryColor: "rgb(147, 51, 234)", // Secondary Lila
+          accentColor: "rgb(236, 72, 153)", // Akzent Rosa
+          userBubbleBackgroundColor: "rgba(236, 72, 153, 0.1)", // Leicht Rosa für User Bubbles
+          botBubbleBackgroundColor: "#ffffff", // Weiß für Bot Bubbles
+          userBubbleTextColor: "rgb(55, 65, 81)", // Dunkelgrau für Text
+          botBubbleTextColor: "rgb(55, 65, 81)", // Dunkelgrau für Text
         },
         i18n: {
           en: {
