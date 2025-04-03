@@ -62,12 +62,6 @@ export default function Header({
               Home
             </button>
             <button
-              onClick={() => window.location.href = "/chatbot"}
-              className="font-heading font-medium hover:text-primary transition-all"
-            >
-              Chatbot
-            </button>
-            <button
               onClick={() => handleNavClick("features")}
               className="font-heading font-medium hover:text-primary transition-all"
             >
@@ -115,12 +109,6 @@ export default function Header({
                 className="font-heading font-medium py-2 hover:text-primary transition-all text-left"
               >
                 Home
-              </button>
-              <button
-                onClick={() => window.location.href = "/chatbot"}
-                className="font-heading font-medium py-2 hover:text-primary transition-all text-left"
-              >
-                Chatbot
               </button>
               <button
                 onClick={() => handleNavClick("features")}
