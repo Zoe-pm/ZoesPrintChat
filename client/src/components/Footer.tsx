@@ -30,10 +30,10 @@ export default function Footer() {
           "Ich bin Chatty. Wie kann ich Dir helfen?"
         ],
         theme: {
-          primaryColor: "#EC4899", // Pink (primary color from your site)
-          backgroundColor: "#FFFFFF", // White background
-          textColor: "#374151", // Gray-700
-          secondaryColor: "#9333EA", // Purple (matches your gradient)
+          primaryColor: "#EC4899", 
+          backgroundColor: "#FFFFFF",
+          textColor: "#374151", 
+          secondaryColor: "#9333EA",
         },
         i18n: {
           en: {
