@@ -66,9 +66,9 @@ export default function Contact() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-6">Get in Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">💌 Let's talk, human to human!</h2>
             <p className="text-gray-600 mb-8">
-              Have questions? Reach out to us directly or start a chat with our printing assistant.
+              Du hast Fragen, Ideen oder willst einfach mal plaudern? Sag mir, wie ich dir helfen kann.
             </p>
             
             <div className="space-y-6 mb-8">
@@ -77,8 +77,8 @@ export default function Contact() {
                   <FontAwesomeIcon icon={faMapMarkerAlt} />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-gray-800 mb-1">Visit Us</h4>
-                  <p className="text-gray-600">123 Print Avenue, Creativetown, CT 12345</p>
+                  <h4 className="font-heading font-bold text-gray-800 mb-1">Standort</h4>
+                  <p className="text-gray-600">Frankfurt am Main</p>
                 </div>
               </div>
               
@@ -87,8 +87,8 @@ export default function Contact() {
                   <FontAwesomeIcon icon={faPhoneAlt} />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-gray-800 mb-1">Call Us</h4>
-                  <p className="text-gray-600">(555) 123-4567</p>
+                  <h4 className="font-heading font-bold text-gray-800 mb-1">Telefon</h4>
+                  <p className="text-gray-600">+49 123 4567890</p>
                 </div>
               </div>
               
@@ -97,8 +97,8 @@ export default function Contact() {
                   <FontAwesomeIcon icon={faEnvelope} />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-gray-800 mb-1">Email Us</h4>
-                  <p className="text-gray-600">hello@zoesprintbox.com</p>
+                  <h4 className="font-heading font-bold text-gray-800 mb-1">Email</h4>
+                  <p className="text-gray-600">hello@zoeskitoolbox.de</p>
                 </div>
               </div>
             </div>
@@ -120,41 +120,41 @@ export default function Contact() {
           </div>
           
           <div className="bg-gray-50 rounded-2xl p-6 md:p-8 shadow-md">
-            <h3 className="text-2xl font-heading font-bold text-gray-800 mb-6">Send Us a Message</h3>
+            <h3 className="text-2xl font-heading font-bold text-gray-800 mb-6">Schreib mir eine Nachricht ✨</h3>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label htmlFor="name" className="block font-heading font-medium text-gray-800 mb-2">Your Name</label>
+                <label htmlFor="name" className="block font-heading font-medium text-gray-800 mb-2">Dein Name</label>
                 <input 
                   type="text" 
                   id="name" 
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50" 
-                  placeholder="Enter your name"
+                  placeholder="Wie darf ich dich nennen?"
                 />
               </div>
               
               <div className="mb-4">
-                <label htmlFor="email" className="block font-heading font-medium text-gray-800 mb-2">Email Address</label>
+                <label htmlFor="email" className="block font-heading font-medium text-gray-800 mb-2">Deine E-Mail</label>
                 <input 
                   type="email" 
                   id="email" 
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50" 
-                  placeholder="Enter your email"
+                  placeholder="Für meine Antwort an dich"
                 />
               </div>
               
               <div className="mb-4">
-                <label htmlFor="message" className="block font-heading font-medium text-gray-800 mb-2">Your Message</label>
+                <label htmlFor="message" className="block font-heading font-medium text-gray-800 mb-2">Deine Nachricht</label>
                 <textarea 
                   id="message" 
                   rows={4} 
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50" 
-                  placeholder="What would you like to know?"
+                  placeholder="Was kann ich für dich tun? Erzähl mir von deinem Projekt..."
                 ></textarea>
               </div>
               
@@ -163,7 +163,7 @@ export default function Contact() {
                 disabled={isSubmitting}
                 className="bg-gradient-to-r from-primary to-purple-500 text-white py-3 px-8 rounded-full font-heading font-bold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 w-full disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
               </button>
             </form>
           </div>

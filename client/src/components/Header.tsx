@@ -7,7 +7,10 @@ interface HeaderProps {
   setIsMobileMenuOpen: (open: boolean) => void;
 }
 
-export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }: HeaderProps) {
+export default function Header({
+  isMobileMenuOpen,
+  setIsMobileMenuOpen,
+}: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -26,18 +29,20 @@ export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }: Header
       const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
-      
+
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   };
 
   return (
-    <header className={`w-full py-4 px-6 bg-white fixed top-0 z-50 transition-all duration-300 ${
-      isScrolled ? "shadow-md" : "shadow-sm"
-    }`}>
+    <header
+      className={`w-full py-4 px-6 bg-white fixed top-0 z-50 transition-all duration-300 ${
+        isScrolled ? "shadow-md" : "shadow-sm"
+      }`}
+    >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -46,49 +51,52 @@ export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }: Header
               <FontAwesomeIcon icon={faPrint} />
             </div>
             <h1 className="text-2xl font-heading font-bold text-gray-800">
-              <span className="text-primary">Zoes</span> Printbox
+              <span className="text-primary">Zoe's</span> KI Toolbox
             </h1>
           </div>
-          
+
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <button 
-              onClick={() => handleNavClick("features")} 
+            <button
+              onClick={() => handleNavClick("features")}
               className="font-heading font-medium hover:text-primary transition-all"
             >
               Services
             </button>
-            <button 
-              onClick={() => handleNavClick("how-it-works")} 
+            <button
+              onClick={() => handleNavClick("how-it-works")}
               className="font-heading font-medium hover:text-primary transition-all"
             >
               Wie es funktioniert
             </button>
-            <button 
-              onClick={() => handleNavClick("about")} 
+            <button
+              onClick={() => handleNavClick("about")}
               className="font-heading font-medium hover:text-primary transition-all"
             >
               Über uns
             </button>
-            <button 
-              onClick={() => handleNavClick("contact")} 
+            <button
+              onClick={() => handleNavClick("contact")}
               className="font-heading font-medium hover:text-primary transition-all"
             >
               Kontakt
             </button>
           </nav>
-          
+
           {/* Mobile menu button */}
           <div className="block md:hidden">
-            <button 
+            <button
               className="text-gray-800 focus:outline-none"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} className="text-xl" />
+              <FontAwesomeIcon
+                icon={isMobileMenuOpen ? faTimes : faBars}
+                className="text-xl"
+              />
             </button>
           </div>
         </div>
-        
+
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-2">

@@ -8,11 +8,14 @@ export default function Hero() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="z-10">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold leading-tight mb-6">
-              Willkommen bei Zoe's Printbox
+            <h1 className="text-4xl md:text-5xl font-heading font-bold leading-tight mb-4">
+              Willkommen bei Zoe's KI Toolbox
             </h1>
+            <h2 className="text-2xl md:text-3xl font-heading opacity-90 mb-4">
+              Clever. Charmant. Chatbot.
+            </h2>
             <p className="text-lg md:text-xl opacity-90 mb-8">
-              Ihr zuverlässiger Partner für alle Druckservices. Qualität, Schnelligkeit und Kreativität für Ihre Projekte!
+              Dein individueller KI-Bot wartet schon!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
@@ -55,31 +58,31 @@ export default function Hero() {
           </div>
           <div className="relative z-10">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-6 border border-white/20">
-              <h3 className="font-heading font-bold text-2xl mb-4">Unsere Services</h3>
+              <h3 className="font-heading font-bold text-2xl mb-4">Was ich für dich baue:</h3>
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>Hochwertige Fotodruck</span>
+                  <span>🤖 Individuelle RAGbots (Retriever + Chatbot-Frontend)</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>Visitenkarten & Broschüren</span>
+                  <span>🧠 LLM-Lösungen mit ChatGPT oder lokal (Ollama)</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>Großformatdruck</span>
+                  <span>🧩 Automatisierungen mit n8n</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>Werbematerialien</span>
+                  <span>📚 Vektor-Datenbanken (z.B. für Wissens-Chats)</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>Personalisierte Geschenke</span>
+                  <span>🔐 Fokus auf Datenschutz & volle Kostenkontrolle</span>
                 </li>
               </ul>
               <div className="mt-6 pt-4 border-t border-white/20">
-                <p className="font-medium">Sprechen Sie uns an für ein individuelles Angebot!</p>
+                <p className="font-medium">Sag mir, was du brauchst – wir bauen's leicht & schön</p>
               </div>
             </div>
           </div>

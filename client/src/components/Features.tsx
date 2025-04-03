@@ -1,22 +1,22 @@
 import FeatureCard from "./FeatureCard";
-import { faCommentsDollar, faLightbulb, faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
+import { faBrain, faUserShield, faRobot } from "@fortawesome/free-solid-svg-icons";
 
 export default function Features() {
   const features = [
     {
-      icon: faCommentsDollar,
-      title: "Instant Price Quotes",
-      description: "Get real-time pricing information for all your printing needs without the wait."
+      icon: faBrain,
+      title: "Verstehe deine Kunden besser",
+      description: "KI-Chatbots, die wirklich helfen – mit Persönlichkeit und direktem Zugriff auf dein Wissen."
     },
     {
-      icon: faLightbulb,
-      title: "Expert Recommendations",
-      description: "Receive personalized suggestions for paper types, sizes, and finishes for your project."
+      icon: faUserShield,
+      title: "Entlaste dein Team",
+      description: "Automatisierte Antworten auf Standardfragen rund um die Uhr – während du dich auf das Wesentliche konzentrierst."
     },
     {
-      icon: faCalendarCheck,
-      title: "Easy Scheduling",
-      description: "Book printing appointments and check pickup times directly through chat."
+      icon: faRobot,
+      title: "Wachse mit Stil und KI-Power",
+      description: "Deine Daten, deine Kontrolle – flexible KI-Lösungen für mehr Effizienz und Kundenzufriedenheit."
     }
   ];
 
@@ -24,8 +24,8 @@ export default function Features() {
     <section id="features" className="py-16 md:py-24 px-6 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">Why Choose Zoe's Printbox?</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">Get personalized printing assistance through our friendly chat interface.</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">Warum Zoe's KI Toolbox?</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">Wir bauen für dich smarte RAGbots & LLM-basierte Assistenten, die deine Kundenkommunikation automatisieren, dein Wissen clever verfügbar machen – und dabei 100% zu deinem Stil passen.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
