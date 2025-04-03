@@ -108,20 +108,20 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-heading font-bold mb-6">Meine Leistungen</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/80 hover:text-white transition-all">🤖 RAGbots & Chatbots</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-all">🧠 LLM-Integrationen</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-all">🧩 n8n Automatisierungen</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-all">📚 Vektor-Datenbanken</a></li>
+              <li><a href="#" className="text-white/80 hover:text-white transition-all">RAGbots & Chatbots</a></li>
+              <li><a href="#" className="text-white/80 hover:text-white transition-all">LLM-Integrationen</a></li>
+              <li><a href="#" className="text-white/80 hover:text-white transition-all">n8n Automatisierungen</a></li>
+              <li><a href="#" className="text-white/80 hover:text-white transition-all">Vektor-Datenbanken</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-heading font-bold mb-6">Für wen?</h4>
             <ul className="space-y-3">
-              <li className="text-white/80">✨ Selbstständige & Coaches</li>
-              <li className="text-white/80">✨ Kleine und mittlere Unternehmen</li>
-              <li className="text-white/80">✨ Kreative & Dienstleister</li>
-              <li className="text-white/80">✨ Alle, die smart wachsen wollen</li>
+              <li className="text-white/80">Selbstständige & Coaches</li>
+              <li className="text-white/80">Kleine und mittlere Unternehmen</li>
+              <li className="text-white/80">Kreative & Dienstleister</li>
+              <li className="text-white/80">Alle, die smart wachsen wollen</li>
             </ul>
           </div>
         </div>

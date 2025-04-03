@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import WaveShape from "./WaveShape";
 
 export default function Hero() {
@@ -34,7 +32,7 @@ export default function Hero() {
                 }}
                 className="bg-gradient-to-r from-primary to-purple-500 text-white py-3 px-8 rounded-full font-heading font-bold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
               >
-                Kontakt aufnehmen <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+                Kontakt aufnehmen →
               </button>
               <button 
                 onClick={() => {
@@ -62,23 +60,23 @@ export default function Hero() {
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>🤖 Individuelle RAGbots (Retriever + Chatbot-Frontend)</span>
+                  <span>Individuelle RAGbots (Retriever + Chatbot-Frontend)</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>🧠 LLM-Lösungen mit ChatGPT oder lokal (Ollama)</span>
+                  <span>LLM-Lösungen mit ChatGPT oder lokal (Ollama)</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>🧩 Automatisierungen mit n8n</span>
+                  <span>Automatisierungen mit n8n</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>📚 Vektor-Datenbanken (z.B. für Wissens-Chats)</span>
+                  <span>Vektor-Datenbanken (z.B. für Wissens-Chats)</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>🔐 Fokus auf Datenschutz & volle Kostenkontrolle</span>
+                  <span>Fokus auf Datenschutz & volle Kostenkontrolle</span>
                 </li>
               </ul>
               <div className="mt-6 pt-4 border-t border-white/20">
