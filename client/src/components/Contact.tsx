@@ -66,7 +66,7 @@ export default function Contact() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">💌 Let's talk, human to human!</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">💌 Willkommen bei Zoe's KI Toolbox</h2>
             <p className="text-gray-600 mb-8">
               Du hast Fragen, Ideen oder willst einfach mal plaudern? Sag mir, wie ich dir helfen kann.
             </p>

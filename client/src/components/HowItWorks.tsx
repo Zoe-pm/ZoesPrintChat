@@ -29,7 +29,7 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-16 md:py-24 px-6 bg-gradient-to-r from-primary to-purple-500 text-white relative">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">So funktioniert's</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Dein individueller KI-Bot wartet schon!</h2>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">In vier Schritten zu deinem individuellen KI-Assistenten – ganz ohne Abo-Stress.</p>
         </div>
         

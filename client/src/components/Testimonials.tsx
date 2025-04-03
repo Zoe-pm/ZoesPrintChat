@@ -26,7 +26,7 @@ export default function Testimonials() {
     <section className="py-16 md:py-24 px-6 bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">Das sagen meine Kunden</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">KI mit Herz & Hirn</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">Erfahrungen von Menschen, die ihre Geschäftsprozesse mit individuellen KI-Assistenten optimiert haben.</p>
         </div>
         
