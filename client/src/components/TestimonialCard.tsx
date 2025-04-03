@@ -16,11 +16,11 @@ export default function TestimonialCard({ quote, name, avatar, rating }: Testimo
     const hasHalfStar = rating % 1 !== 0;
     
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<FontAwesomeIcon key={`star-${i}`} icon={faStar} />);
+      stars.push(<FontAwesomeIcon key={`star-${i}`} icon={faStar} className="text-lg mr-1" />);
     }
     
     if (hasHalfStar) {
-      stars.push(<FontAwesomeIcon key="half-star" icon={faStarHalfAlt} />);
+      stars.push(<FontAwesomeIcon key="half-star" icon={faStarHalfAlt} className="text-lg mr-1" />);
     }
     
     return stars;
@@ -29,8 +29,8 @@ export default function TestimonialCard({ quote, name, avatar, rating }: Testimo
   return (
     <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg relative transition-all duration-300">
       {/* Quote mark */}
-      <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-gradient-to-r from-primary to-purple-500 flex items-center justify-center text-white">
-        <FontAwesomeIcon icon={faQuoteLeft} />
+      <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-to-r from-primary to-purple-500 flex items-center justify-center text-white shadow-lg shadow-primary/30 transform hover:rotate-12 transition-all duration-300">
+        <FontAwesomeIcon icon={faQuoteLeft} size="lg" />
       </div>
       
       <div className="pt-4">

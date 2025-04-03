@@ -1,15 +1,15 @@
 import FeatureCard from "./FeatureCard";
-import { faBrain, faUserShield, faRobot } from "@fortawesome/free-solid-svg-icons";
+import { faRobot, faWandMagicSparkles, faHeartPulse, faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
 export default function Features() {
   const features = [
     {
-      icon: faBrain,
+      icon: faLightbulb,
       title: "Verstehe deine Kunden besser",
       description: "KI-Chatbots, die wirklich helfen – mit Persönlichkeit und direktem Zugriff auf dein Wissen."
     },
     {
-      icon: faUserShield,
+      icon: faHeartPulse,
       title: "Entlaste dein Team",
       description: "Automatisierte Antworten auf Standardfragen rund um die Uhr – während du dich auf das Wesentliche konzentrierst."
     },
