@@ -8,6 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Imprint from "@/components/Imprint";
+import Datenschutz from "@/components/Datenschutz";
 import { useState } from "react";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         <Testimonials />
         <Contact />
         {showImprint && <div id="imprint-modal"><Imprint /></div>}
+        <Datenschutz />
       </main>
       <Footer />
     </div>
