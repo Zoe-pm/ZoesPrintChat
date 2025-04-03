@@ -35,9 +35,8 @@ export default function ChatbotPage() {
               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-8">
                 <h3 className="font-heading font-bold text-lg text-gray-800 mb-2">Hinweis:</h3>
                 <p className="text-gray-600">
-                  Dieser Chatbot ist eine Demonstration meiner Arbeit. Er ist darauf trainiert, Fragen zu meinen Dienstleistungen 
-                  und allgemeine Informationen zu KI-Lösungen zu beantworten. Für kundenspezifische Chatbots, schauen Sie sich die 
-                  Demo-Bots an oder kontaktieren Sie mich für eine maßgeschneiderte Lösung.
+                  Dieser Bereich ist für Ihren eigenen Chatbot reserviert. Sie können hier später Ihren persönlichen 
+                  Assistenten integrieren, der speziell auf Ihre Bedürfnisse und Ihr Unternehmen zugeschnitten ist.
                 </p>
               </div>
             </div>

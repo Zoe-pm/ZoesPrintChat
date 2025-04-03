@@ -56,6 +56,18 @@ export default function Header({
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <button
+              onClick={() => window.location.href = "/"}
+              className="font-heading font-medium hover:text-primary transition-all"
+            >
+              Home
+            </button>
+            <button
+              onClick={() => window.location.href = "/chatbot"}
+              className="font-heading font-medium hover:text-primary transition-all"
+            >
+              Chatbot
+            </button>
+            <button
               onClick={() => handleNavClick("features")}
               className="font-heading font-medium hover:text-primary transition-all"
             >
@@ -98,6 +110,18 @@ export default function Header({
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-2">
             <div className="flex flex-col space-y-3">
+              <button
+                onClick={() => window.location.href = "/"}
+                className="font-heading font-medium py-2 hover:text-primary transition-all text-left"
+              >
+                Home
+              </button>
+              <button
+                onClick={() => window.location.href = "/chatbot"}
+                className="font-heading font-medium py-2 hover:text-primary transition-all text-left"
+              >
+                Chatbot
+              </button>
               <button
                 onClick={() => handleNavClick("features")}
                 className="font-heading font-medium py-2 hover:text-primary transition-all text-left"
