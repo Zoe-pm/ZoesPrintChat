@@ -30,15 +30,18 @@ export default function Footer() {
           "Wie kann ich helfen?"
         ],
         theme: {
-          primaryColor: "rgb(236, 72, 153)", // Primary Rosa
-          backgroundColor: "#ffffff",
-          textColor: "rgb(55, 65, 81)", // Text Grau
-          secondaryColor: "rgb(147, 51, 234)", // Secondary Lila
-          accentColor: "rgb(236, 72, 153)", // Akzent Rosa
-          userBubbleBackgroundColor: "rgba(236, 72, 153, 0.1)", // Leicht Rosa für User Bubbles
-          botBubbleBackgroundColor: "#ffffff", // Weiß für Bot Bubbles
-          userBubbleTextColor: "rgb(55, 65, 81)", // Dunkelgrau für Text
-          botBubbleTextColor: "rgb(55, 65, 81)", // Dunkelgrau für Text
+          styles: {
+            "--n8n-primary": "rgb(236, 72, 153)",
+            "--n8n-primary-light": "rgba(236, 72, 153, 0.1)",
+            "--n8n-secondary": "rgb(147, 51, 234)",
+            "--n8n-text": "rgb(55, 65, 81)",
+            "--n8n-background": "#ffffff",
+            "--n8n-bubble-user-background": "rgba(236, 72, 153, 0.1)",
+            "--n8n-bubble-bot-background": "#ffffff",
+            "--n8n-bubble-user-text": "rgb(55, 65, 81)",
+            "--n8n-bubble-bot-text": "rgb(55, 65, 81)",
+            "--n8n-header-background": "rgb(236, 72, 153)",
+          }
         },
         i18n: {
           en: {
