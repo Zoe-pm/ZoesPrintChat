@@ -21,7 +21,7 @@ export default function About() {
     {
       icon: faCode,
       title: "Technisch solide",
-      description: "Mit n8n, ChatGPT, Ollama und Vektor-DBs"
+      description: "Mit n8n, Flowise, ChatGPT, Ollama – als Stand-alone oder integriert"
     }
   ];
 
@@ -42,7 +42,7 @@ export default function About() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-pink-500 mr-2">•</span>
-                      <span>KMU, die interne Abläufe automatisieren möchten</span>
+                      <span>KMU, die interne Abläufe automatisieren oder automatisch Leads generieren wollen</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-pink-500 mr-2">•</span>
