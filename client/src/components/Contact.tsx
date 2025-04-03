@@ -120,52 +120,29 @@ export default function Contact() {
           </div>
           
           <div className="bg-gray-50 rounded-2xl p-6 md:p-8 shadow-md">
-            <h3 className="text-2xl font-heading font-bold text-gray-800 mb-6">Schreib mir eine Nachricht ✨</h3>
-            <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label htmlFor="name" className="block font-heading font-medium text-gray-800 mb-2">Dein Name</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50" 
-                  placeholder="Wie darf ich dich nennen?"
-                />
+            <h3 className="text-2xl font-heading font-bold text-gray-800 mb-6">Kontaktiere mich direkt ✨</h3>
+            
+            <div className="mb-8 text-center">
+              <div className="w-20 h-20 rounded-full bg-gradient-to-r from-primary to-purple-500 mx-auto flex items-center justify-center text-white mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+                  <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                </svg>
               </div>
-              
-              <div className="mb-4">
-                <label htmlFor="email" className="block font-heading font-medium text-gray-800 mb-2">Deine E-Mail</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50" 
-                  placeholder="Für meine Antwort an dich"
-                />
-              </div>
-              
-              <div className="mb-4">
-                <label htmlFor="message" className="block font-heading font-medium text-gray-800 mb-2">Deine Nachricht</label>
-                <textarea 
-                  id="message" 
-                  rows={4} 
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50" 
-                  placeholder="Was kann ich für dich tun? Erzähl mir von deinem Projekt..."
-                ></textarea>
-              </div>
-              
-              <button 
-                type="submit" 
-                disabled={isSubmitting}
-                className="bg-gradient-to-r from-primary to-purple-500 text-white py-3 px-8 rounded-full font-heading font-bold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 w-full disabled:opacity-70 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
-              </button>
-            </form>
+              <p className="text-gray-700 mb-4">
+                Nutze die Chat-Box in der unteren rechten Ecke, um direkt mit mir in Kontakt zu treten. Ich antworte in der Regel innerhalb von 24 Stunden.
+              </p>
+              <p className="text-gray-600 text-sm">
+                Die Chat-Box ist rund um die Uhr für deine Anfragen verfügbar und die einfachste Möglichkeit, mir deine Ideen und Fragen mitzuteilen.
+              </p>
+            </div>
+            
+            <button 
+              onClick={() => document.getElementById('chat')?.querySelector('button')?.click()}
+              className="bg-gradient-to-r from-primary to-purple-500 text-white py-3 px-8 rounded-full font-heading font-bold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 w-full"
+            >
+              Chat öffnen
+            </button>
           </div>
         </div>
       </div>
