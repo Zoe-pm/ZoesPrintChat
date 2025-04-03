@@ -28,8 +28,13 @@ export default function Footer() {
         initialMessages: [
           "Schön dass Du da bist!",
           "Ich bin Chatty. Wie kann ich Dir helfen?"
-        ,
         ],
+        theme: {
+          primaryColor: "#FF69B4", // Rosa Farbe als Beispiel
+          backgroundColor: "#FFFFFF", // Weißer Hintergrund
+          textColor: "#333333", // Dunkelgrauer Text
+          secondaryColor: "#9370DB", // Lila als Sekundärfarbe
+        },
         i18n: {
           en: {
             title: "Deine Printbox Assistenz",
