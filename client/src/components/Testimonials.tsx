@@ -3,16 +3,16 @@ import TestimonialCard from "./TestimonialCard";
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Der Chatbot für unsere Praxis beantwortet Routinefragen zu Öffnungszeiten und Terminbuchungen – das spart unserem Team täglich wertvolle Zeit und unsere Patienten bekommen sofort Antwort.",
-      name: "Laura Müller",
+      quote: "Zoe hat nicht nur einen Chatbot gebaut – sie hat mein Business entlastet. Als Coach bin ich oft im 1:1-Kontakt, aber der Chatbot von Zoë beantwortet inzwischen die häufigsten Fragen meiner Klient:innen – rund um die Uhr und superfreundlich. Ich war skeptisch, ob Technik zu mir passt, aber Zoe hat alles verständlich erklärt, auf meine Sprache abgestimmt und sogar an Datenschutz gedacht. Einfach wow!",
+      name: "Julia M., Selbstständige Coachin & Autorin",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       rating: 5
     },
     {
-      quote: "Unser KI-Assistent begleitet Kunden durch unseren Bewerbungsprozess und unterstützt bei den häufigsten Anliegen. Die Integration in unsere Website war überraschend einfach!",
-      name: "Thomas Weber",
+      quote: "Unsere Prozesse sind endlich organisiert – dank Zoe's KI-Lösung! Wir bekommen viele Anfragen, oft wiederkehrend. Zoe hat einen maßgeschneiderten Bot gebaut, der uns sofort entlastet – vom Erstkontakt bis zur Terminvergabe. Das Beste: keine monatlichen Abo-Kosten und keine versteckten Spielereien. Einfach solide Technik, super Betreuung und eine sympathische Umsetzung.",
+      name: "Frank K., Inhaber eines Familienbetriebs im SHK-Bereich",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
-      rating: 4.5
+      rating: 5
     },
     {
       quote: "Als Beraterin konnte ich mit meinem persönlichen RAGbot meinen Kundenstamm verdoppeln. Er beantwortet Erstanfragen, qualifiziert Leads und ich kann mich auf die wichtigen Gespräche konzentrieren.",
