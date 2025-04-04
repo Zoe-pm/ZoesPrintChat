@@ -86,7 +86,7 @@ export default function Footer() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ chatInput: input.value })
         })
-          .then(res => res.text()).then(text => {
+        .then(res => res.json())
         .then(data => {
           const botReply = data.text || data.answer || data.message || JSON.stringify(data);
           const botMessage = document.createElement("div");
@@ -98,7 +98,7 @@ export default function Footer() {
             margin-bottom: 10px;
             max-width: 80%;
           `;
-            botMessage.textContent = text;
+          botMessage.textContent = botReply;
           chatBody.appendChild(botMessage);
           chatBody.scrollTop = chatBody.scrollHeight;
         });
