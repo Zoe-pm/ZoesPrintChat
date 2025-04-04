@@ -110,7 +110,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="py-12 px-6 bg-gradient-to-r from-primary to-indigo-600 text-white">
+    <footer className="py-12 px-6 bg-gradient-to-r from-primary to-purple-500 text-white">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
