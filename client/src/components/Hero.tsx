@@ -2,7 +2,7 @@ import WaveShape from "./WaveShape";
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-6 relative bg-gradient-to-r from-primary to-purple-500 text-white overflow-hidden">
+    <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-6 relative bg-gradient-to-r from-primary to-lila-500 text-white overflow-hidden">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="z-10">
