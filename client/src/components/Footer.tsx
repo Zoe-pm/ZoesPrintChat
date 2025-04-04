@@ -33,17 +33,17 @@ export default function Footer() {
           styles: {
             "--n8n-primary": "#EC4899", // Primary Rosa
             "--n8n-primary-light": "#fce7f3", // Sehr helles Rosa
-            "--n8n-secondary": "#9333EA", // Secondary Lila
+            "--n8n-secondary": "#706d73", // Secondary Grau
             "--n8n-text": "#374151", // Text Grau
             "--n8n-background": "#ffffff",
             "--n8n-bubble-user-background": "#fce7f3", // Helles Rosa für User Bubbles
-            "--n8n-bubble-bot-background": "#ffffff",
+            "--n8n-bubble-bot-background": "#706d73",
             "--n8n-bubble-user-text": "#374151",
             "--n8n-bubble-bot-text": "#374151",
             "--n8n-header-background": "linear-gradient(to right, #EC4899, #9333EA)", // Gradient wie Website
             "--n8n-border": "#EC4899", // Primary Rosa für Borders
             "--n8n-button-background": "#EC4899", // Primary Rosa für Buttons
-            "--n8n-button-text": "#ffffff",
+            "--n8n-button-text": "#706d73",
             "--n8n-input-background": "#ffffff",
             "--n8n-input-text": "#374151",
             "--n8n-input-border": "#EC4899",
