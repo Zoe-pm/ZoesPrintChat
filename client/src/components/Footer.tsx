@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ChatWidget from "./ChatWidget";
 
 export default function Footer() {
-  const [isChatOpen, setIsChatOpen] = useState(false);
   return (
     <footer className="py-12 px-6 bg-gradient-to-r from-primary to-purple-500 text-white">
       <div className="container mx-auto">
@@ -190,7 +189,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <ChatWidget isOpen={isChatOpen} setIsOpen={setIsChatOpen} />
+      <ChatWidget isOpen={false} setIsOpen={() => {}} />
     </footer>
   );
 }
