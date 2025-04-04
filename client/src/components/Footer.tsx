@@ -2,29 +2,21 @@ import React, { useEffect } from "react";
 
 export default function Footer() {
   useEffect(() => {
-    // Load n8n chat script
-    const link = document.createElement("link");
-    link.href = "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-
-    const script = document.createElement("script");
-    script.type = "module";
-    script.textContent = `
-      const chatContainer = document.createElement('div');
-      chatContainer.id = 'custom-chat';
-      chatContainer.style.cssText = \`
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 350px;
-        background: #706d73;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        font-family: system-ui, -apple-system, sans-serif;
-        z-index: 1000;
-        border: 1px solid #E5A9B5;
+    // Custom Chatbox ohne n8n style laden
+    const chatContainer = document.createElement("div");
+    chatContainer.id = "custom-chat";
+    chatContainer.style.cssText = `
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 350px;
+      background: #706d73;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      font-family: system-ui, -apple-system, sans-serif;
+      z-index: 1000;
+      border: 1px solid #E5A9B5;
       \`;
 
       const chatHeader = document.createElement('div');
