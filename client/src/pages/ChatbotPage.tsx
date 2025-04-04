@@ -72,7 +72,7 @@ export default function ChatbotPage() {
                   Ich entwickle für Sie einen individuellen Chatbot, der genau auf Ihre Bedürfnisse und Ihr Branding abgestimmt ist.
                 </p>
                 <Link href="/#contact">
-                  <a className="inline-block mt-2 bg-gradient-to-r from-primary to-secondary text-white py-2 px-4 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                  <a className="inline-block mt-2 bg-gradient-to-r from-primary to-purple-500 text-white py-2 px-4 rounded-lg font-medium hover:opacity-90 transition-opacity">
                     Jetzt anfragen
                   </a>
                 </Link>

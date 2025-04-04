@@ -17,10 +17,8 @@ export default function ChatWidget({ isOpen, setIsOpen }: ChatWidgetProps) {
   };
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter" && input.trim()) {
-      e.preventDefault();
+    if (e.key === "Enter") {
       sendMessage();
-      setInput('');
     }
   };
 

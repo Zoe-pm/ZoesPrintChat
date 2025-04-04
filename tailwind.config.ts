@@ -12,7 +12,7 @@ export default {
       },
       colors: {
         primary: "#E5A9B5",
-        secondary: "#1a034f",
+        secondary: "#706d73",
         gray: {
           50: "#F8F7F8",
           100: "#F0EEF0",
@@ -23,7 +23,7 @@ export default {
           600: "#787478",
           700: "#5A575A",
           800: "#3C3A3C",
-          900: "#1E1D1E",
+          900: "#1E1D1E"
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -35,7 +35,7 @@ export default {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-
+        
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
