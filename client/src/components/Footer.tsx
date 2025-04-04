@@ -11,53 +11,94 @@ export default function Footer() {
     const script = document.createElement("script");
     script.type = "module";
     script.textContent = `
-      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-      createChat({
-        webhookUrl: 'https://zoebahati.app.n8n.cloud/webhook/df8f156c-bbaa-4bdd-b797-1820544069e7/chat',
-        webhookConfig: {
-          method: "POST",
-          headers: {},
-        },
-        target: "#n8n-chat",
-        mode: "window",
-        chatInputKey: "chatInput",
-        chatSessionKey: "sessionId",
-        metadata: {},
-        showWelcomeScreen: false,
-        defaultLanguage: "en",
-        initialMessages: [
-          "Schön dass Du da bist!",
-          "Wie kann ich helfen?"
-        ],
-        theme: {
-          styles: {
-            "--n8n-primary": "#EC4899", // Primary Rosa
-            "--n8n-primary-light": "#fce7f3", // Sehr helles Rosa
-            "--n8n-secondary": "#706d73", // Secondary Grau
-            "--n8n-text": "#374151", // Text Grau
-            "--n8n-background": "#ffffff",
-            "--n8n-bubble-user-background": "#fce7f3", // Helles Rosa für User Bubbles
-            "--n8n-bubble-bot-background": "#706d73",
-            "--n8n-bubble-user-text": "#374151",
-            "--n8n-bubble-bot-text": "#374151",
-            "--n8n-header-background": "linear-gradient(to right, #EC4899, #9333EA)", // Gradient wie Website
-            "--n8n-border": "#EC4899", // Primary Rosa für Borders
-            "--n8n-button-background": "#EC4899", // Primary Rosa für Buttons
-            "--n8n-button-text": "#706d73",
-            "--n8n-input-background": "#ffffff",
-            "--n8n-input-text": "#374151",
-            "--n8n-input-border": "#EC4899",
-          }
-        },
-        i18n: {
-          en: {
-            title: "Deine Printbox Assistenz",
-            subtitle: "24/7 erreichbar",
-            footer: "",
-            getStarted: "Sprich mit mir",
-            inputPlaceholder: "Erzähl mir...",
-          },
-        },
+      const chatContainer = document.createElement('div');
+      chatContainer.id = 'custom-chat';
+      chatContainer.style.cssText = \`
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 350px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        font-family: system-ui, -apple-system, sans-serif;
+        z-index: 1000;
+        border: 1px solid #E5A9B5;
+      \`;
+
+      const chatHeader = document.createElement('div');
+      chatHeader.style.cssText = \`
+        background: linear-gradient(to right, #E5A9B5, #9B8B93);
+        color: white;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      \`;
+      chatHeader.innerHTML = \`
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 32px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">KI</div>
+          <div>
+            <div style="font-weight: bold;">Deine Printbox Assistenz</div>
+            <div style="font-size: 12px;">24/7 erreichbar</div>
+          </div>
+        </div>
+      \`;
+
+      const chatBody = document.createElement('div');
+      chatBody.style.cssText = \`
+        height: 300px;
+        overflow-y: auto;
+        padding: 15px;
+        background: #f8f9fa;
+      \`;
+
+      const chatInput = document.createElement('div');
+      chatInput.style.cssText = \`
+        padding: 15px;
+        border-top: 1px solid #E5A9B5;
+        background: white;
+      \`;
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.placeholder = 'Erzähl mir...';
+      input.style.cssText = \`
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #E5A9B5;
+        border-radius: 20px;
+        outline: none;
+        &:focus {
+          border-color: #9B8B93;
+        }
+      \`;
+
+      chatInput.appendChild(input);
+      chatContainer.appendChild(chatHeader);
+      chatContainer.appendChild(chatBody);
+      chatContainer.appendChild(chatInput);
+      document.body.appendChild(chatContainer);
+
+      // Initial messages
+      const messages = [
+        "Schön dass Du da bist!",
+        "Wie kann ich helfen?"
+      ];
+
+      messages.forEach(msg => {
+        const msgElement = document.createElement('div');
+        msgElement.style.cssText = \`
+          background: #9B8B93;
+          color: white;
+          padding: 10px 15px;
+          border-radius: 15px;
+          margin-bottom: 10px;
+          max-width: 80%;
+        \`;
+        msgElement.textContent = msg;
+        chatBody.appendChild(msgElement);
       });
     `;
     document.body.appendChild(script);
