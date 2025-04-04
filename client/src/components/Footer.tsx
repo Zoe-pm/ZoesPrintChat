@@ -1,5 +1,5 @@
+
 import React from "react";
-import ChatWidget from "@/components/ChatWidget"; // ← Pfad je nach Projektstruktur ggf. anpassen
 
 export default function Footer() {
   return (
@@ -9,10 +9,6 @@ export default function Footer() {
           © {new Date().getFullYear()} Printbox • KI mit Herz & Hirn.
         </p>
       </div>
-
-      {/* 💬 ChatWidget schwebt unabhängig vom Footer-Inhalt */}
-      <ChatWidget />
     </footer>
   );
 }
-
