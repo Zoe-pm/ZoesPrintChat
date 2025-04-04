@@ -2,7 +2,7 @@ import WaveShape from "./WaveShape";
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-6 relative bg-gradient-to-r from-primary to-secondary text-white overflow-hidden">
+    <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-6 relative bg-gradient-to-r from-primary to-purple-500 text-white overflow-hidden">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="z-10">
@@ -31,7 +31,7 @@ export default function Hero() {
                     });
                   }
                 }}
-                className="bg-gradient-to-r from-primary to-purple-500 text-white py-3 px-8 rounded-full font-heading font-bold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
+                className="bg-gradient-to-r from-primary to-secondary text-white py-3 px-8 rounded-full font-heading font-bold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
               >
                 Kontakt aufnehmen →
               </button>
@@ -98,9 +98,9 @@ export default function Hero() {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-20 h-20 rounded-full bg-white/10 animate-bounce duration-[3000ms]"></div>
-      <div className="absolute bottom-40 left-10 w-12 h-12 rounded-full bg-white/10 animate-bounce duration-[3000ms] delay-1000"></div>
-      <div className="absolute top-40 left-20 w-8 h-8 rounded-full bg-white/10 animate-bounce duration-[3000ms] delay-500"></div>
+      <div className="absolute top-20 right-10 w-20 h-20 rounded-full bg-white/15 animate-bounce duration-[3000ms]"></div>
+      <div className="absolute bottom-40 left-10 w-12 h-12 rounded-full bg-white/15 animate-bounce duration-[3000ms] delay-1000"></div>
+      <div className="absolute top-40 left-20 w-8 h-8 rounded-full bg-white/15 animate-bounce duration-[3000ms] delay-500"></div>
 
       {/* Wave divider */}
       <WaveShape />
