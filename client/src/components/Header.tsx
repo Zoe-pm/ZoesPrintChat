@@ -45,7 +45,7 @@ export default function Header({
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white mr-3">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-purple-500 flex items-center justify-center text-white mr-3">
               <span className="text-xs font-bold">KI</span>
             </div>
             <h1 className="text-2xl font-heading font-bold text-gray-800">
