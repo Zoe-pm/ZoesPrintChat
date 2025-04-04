@@ -29,7 +29,7 @@ export default function Footer() {
 
       const chatHeader = document.createElement('div');
       chatHeader.style.cssText = \`
-        background: linear-gradient(to right, #E5A9B5, #9B8B93);
+        background: linear-gradient(to right, #dba4af, #7a6f75);
         color: white;
         padding: 15px;
         display: flex;

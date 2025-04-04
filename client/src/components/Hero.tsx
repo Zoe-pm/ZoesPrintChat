@@ -98,9 +98,9 @@ export default function Hero() {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-20 h-20 rounded-full bg-white/10 animate-bounce duration-[3000ms]"></div>
-      <div className="absolute bottom-40 left-10 w-12 h-12 rounded-full bg-white/10 animate-bounce duration-[3000ms] delay-1000"></div>
-      <div className="absolute top-40 left-20 w-8 h-8 rounded-full bg-white/10 animate-bounce duration-[3000ms] delay-500"></div>
+      <div className="absolute top-20 right-10 w-20 h-20 rounded-full bg-white/15 animate-bounce duration-[3000ms]"></div>
+      <div className="absolute bottom-40 left-10 w-12 h-12 rounded-full bg-white/15 animate-bounce duration-[3000ms] delay-1000"></div>
+      <div className="absolute top-40 left-20 w-8 h-8 rounded-full bg-white/15 animate-bounce duration-[3000ms] delay-500"></div>
 
       {/* Wave divider */}
       <WaveShape />
