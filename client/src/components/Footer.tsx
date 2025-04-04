@@ -20,14 +20,13 @@ export default function Footer() {
       `;
 
       const chatHeader = document.createElement('div');
-      chatHeader.style.cssText = `
-        background: linear-gradient(to right, #635759, #c6b8d1);
-        color: white;
-        padding: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      `;
+      chatHeader.style.cssText = 
+        'background: linear-gradient(to right, #635759, #c6b8d1);' +
+        'color: white;' +
+        'padding: 15px;' +
+        'display: flex;' +
+        'align-items: center;' +
+        'justify-content: space-between;';
       chatHeader.innerHTML = `
         <div style="display: flex; align-items: center; gap: 10px;">
           <div style="width: 32px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">KI</div>
