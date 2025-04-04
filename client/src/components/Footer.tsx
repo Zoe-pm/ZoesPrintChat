@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import ChatWidget from "./ChatWidget";
 
 export default function Footer() {
   return (
@@ -188,6 +189,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <ChatWidget isOpen={false} setIsOpen={() => {}} />
     </footer>
   );
 }
