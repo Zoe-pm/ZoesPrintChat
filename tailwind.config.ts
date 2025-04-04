@@ -11,6 +11,20 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        primary: "#E5A9B5",
+        secondary: "#9B8B93",
+        gray: {
+          50: "#F8F7F8",
+          100: "#F0EEF0",
+          200: "#E1DFE1",
+          300: "#D2CFD2",
+          400: "#B4B0B4",
+          500: "#969296",
+          600: "#787478",
+          700: "#5A575A",
+          800: "#3C3A3C",
+          900: "#1E1D1E"
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -21,10 +35,7 @@ export default {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
+        
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
