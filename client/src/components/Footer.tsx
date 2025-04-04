@@ -17,18 +17,18 @@ export default function Footer() {
       font-family: system-ui, -apple-system, sans-serif;
       z-index: 1000;
       border: 1px solid #E5A9B5;
-      \`;
+      `;
 
       const chatHeader = document.createElement('div');
-      chatHeader.style.cssText = \`
+      chatHeader.style.cssText = `
         background: linear-gradient(to right, #635759, #c6b8d1);
         color: white;
         padding: 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-      \`;
-      chatHeader.innerHTML = \`
+      `;
+      chatHeader.innerHTML = `
         <div style="display: flex; align-items: center; gap: 10px;">
           <div style="width: 32px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">KI</div>
           <div>
@@ -36,27 +36,27 @@ export default function Footer() {
             <div style="font-size: 12px;">24/7 erreichbar</div>
           </div>
         </div>
-      \`;
+      `;
 
       const chatBody = document.createElement('div');
-      chatBody.style.cssText = \`
+      chatBody.style.cssText = `
         height: 300px;
         overflow-y: auto;
         padding: 15px;
         background: #f8f9fa;
-      \`;
+      `;
 
       const chatInput = document.createElement('div');
-      chatInput.style.cssText = \`
+      chatInput.style.cssText = `
         padding: 15px;
         border-top: 1px solid #E5A9B5;
         background: white;
-      \`;
+      `;
 
       const input = document.createElement('input');
       input.type = 'text';
       input.placeholder = 'Erzähl mir...';
-      input.style.cssText = \`
+      input.style.cssText = `
         width: 100%;
         padding: 10px;
         border: 1px solid #E5A9B5;
@@ -65,7 +65,7 @@ export default function Footer() {
         &:focus {
           border-color: #9B8B93;
         }
-      \`;
+      `;
 
       chatInput.appendChild(input);
       chatContainer.appendChild(chatHeader);
@@ -81,24 +81,28 @@ export default function Footer() {
 
       messages.forEach(msg => {
         const msgElement = document.createElement('div');
-        msgElement.style.cssText = \`
+        msgElement.style.cssText = `
           background: #9B8B93;
           color: white;
           padding: 10px 15px;
           border-radius: 15px;
           margin-bottom: 10px;
           max-width: 80%;
-        \`;
+        `;
         msgElement.textContent = msg;
         chatBody.appendChild(msgElement);
       });
-    `;
-    document.body.appendChild(script);
 
-    return () => {
-      document.head.removeChild(link);
-      document.body.removeChild(script);
-    };
+      //Adding missing script element creation and appending
+      const script = document.createElement('script');
+      script.src = 'path/to/your/chat/script.js'; // Replace with actual path
+      document.body.appendChild(script);
+
+
+      return () => {
+        document.body.removeChild(chatContainer); //remove chat container
+        document.body.removeChild(script);
+      };
   }, []);
 
   return (
