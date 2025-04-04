@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 
 export default function Footer() {
@@ -19,13 +20,15 @@ export default function Footer() {
     `;
 
     const chatHeader = document.createElement("div");
-    chatHeader.style.cssText =
-      "background: linear-gradient(to right, #EC4899, #9333EA);" +
-      "color: white;" +
-      "padding: 15px;" +
-      "display: flex;" +
-      "align-items: center;" +
-      "justify-content: space-between;";
+    chatHeader.style.cssText = `
+      background: linear-gradient(to right, #635759, #c6b8d1);
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    `;
+    
     chatHeader.innerHTML = `
       <div style="display: flex; align-items: center; gap: 10px;">
         <div style="width: 32px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">KI</div>
@@ -73,6 +76,7 @@ export default function Footer() {
           margin-bottom: 10px;
           max-width: 80%;
           align-self: flex-end;
+          margin-left: auto;
         `;
         userMessage.textContent = input.value;
         chatBody.appendChild(userMessage);
@@ -80,28 +84,24 @@ export default function Footer() {
         fetch("https://zoebahati.app.n8n.cloud/webhook/df8f156c-bbaa-4bdd-b797-1820544069e7/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify
-            ({ chatInput: input.value })
+          body: JSON.stringify({ chatInput: input.value })
         })
-          .then(res => res.json())
-.then(data => {
-  const botReply = data.text || data.answer || data.message || JSON.stringify(data);
-
-  const botMessage = document.createElement("div");
-  botMessage.style.cssText = `
-    background: #9B8B93;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    max-width: 80%;
-  `;
-  botMessage.textContent = botReply;
-
-  chatBody.appendChild(botMessage);
-  chatBody.scrollTop = chatBody.scrollHeight;
-});
-
+        .then(res => res.json())
+        .then(data => {
+          const botReply = data.text || data.answer || data.message || JSON.stringify(data);
+          const botMessage = document.createElement("div");
+          botMessage.style.cssText = `
+            background: #9B8B93;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            max-width: 80%;
+          `;
+          botMessage.textContent = botReply;
+          chatBody.appendChild(botMessage);
+          chatBody.scrollTop = chatBody.scrollHeight;
+        });
 
         input.value = "";
       }
@@ -113,7 +113,7 @@ export default function Footer() {
     chatContainer.appendChild(chatInput);
     document.body.appendChild(chatContainer);
 
-    // Begrüßung
+    // Welcome messages
     const messages = [
       "Schön dass Du da bist!",
       "Wie kann ich helfen?"
@@ -141,7 +141,6 @@ export default function Footer() {
   return (
     <footer className="py-12 px-6 bg-gradient-to-r from-primary to-purple-500 text-white">
       <div className="container mx-auto">
-        {/* Hier kannst du deinen Footer-Content einfügen */}
         <p>© {new Date().getFullYear()} Zoë Bahati Hagen • KI mit Herz & Hirn.</p>
       </div>
     </footer>
