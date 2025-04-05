@@ -40,7 +40,7 @@ export default function ChatWidget() {
       const data = await res.json();
       console.log("Chat response:", data);
       const botMsg = {
-        text: data.text || "Ich verstehe Ihre Anfrage. Wie kann ich Ihnen weiter helfen?",
+        text: data.message || data.text || "Ich verstehe Ihre Anfrage. Wie kann ich Ihnen weiter helfen?",
         sender: "bot" as const,
       };
       setMessages((prev) => [...prev, botMsg]);
