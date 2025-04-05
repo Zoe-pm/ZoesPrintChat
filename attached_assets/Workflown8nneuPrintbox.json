@@ -1,0 +1,53 @@
+{
+  "name": "Printbox Chatbot Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "printbox",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "Webhook1",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "agent": {
+          "model": "gpt-3.5-turbo",
+          "prompt": "{{ $json.input }}"
+        }
+      },
+      "id": "AIAgent1",
+      "name": "AI Agent",
+      "type": "n8n-nodes-base.openAIAgent",
+      "typeVersion": 1,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "responseMode": "lastNode",
+        "responseData": "firstEntryJson",
+        "jsonParameters": true,
+        "options": {},
+        "responseBody": "{\n  \"text\": \"{{ $json.output }}\"\n}"
+      },
+      "id": "RespondToWebhook1",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [680, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [[{"node": "AI Agent", "type": "main", "index": 0}]]
+    },
+    "AI Agent": {
+      "main": [[{"node": "Respond to Webhook", "type": "main", "index": 0}]]
+    }
+  },
+  "active": true
+}
