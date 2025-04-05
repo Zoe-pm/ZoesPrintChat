@@ -30,17 +30,17 @@ export default function ChatWidget() {
     setIsLoading(true);
 
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch("https://zoebahati.app.n8n.cloud/webhook/df8f156c-bbaa-4bdd-b797-1820544069e7/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ message: input }),
+        body: JSON.stringify({ input: input }),
       });
       const data = await res.json();
       console.log("Chat response:", data);
       const botMsg = {
-        text: data.text || data.message || "Ich verstehe Ihre Anfrage. Wie kann ich Ihnen weiter helfen?",
+        text: data.text || "Ich verstehe Ihre Anfrage. Wie kann ich Ihnen weiter helfen?",
         sender: "bot" as const,
       };
       setMessages((prev) => [...prev, botMsg]);
