@@ -13,8 +13,6 @@ import { useState } from "react";
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [showImprint, setShowImprint] = useState(false);
-
   return (
     <div className="min-h-screen flex flex-col font-sans antialiased">
       <Header
@@ -29,11 +27,9 @@ export default function Home() {
         <About />
         <Testimonials />
         <Contact />
-        {showImprint && (
-          <div id="imprint-modal">
-            <Imprint />
-          </div>
-        )}
+        <div id="imprint-modal" style={{ display: 'none' }}>
+          <Imprint />
+        </div>
         <Datenschutz />
       </main>
       <Footer />
