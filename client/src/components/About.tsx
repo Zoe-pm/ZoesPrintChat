@@ -54,21 +54,21 @@ export default function About() {
                   <ul className="space-y-3 text-left">
                     <li className="flex items-start">
                       <span className="text-pink-500 mr-2">•</span>
-                      <span>
+                      <span className="text-gray-700">
                         Selbstständige & Coaches, die mehr Zeit für ihre
                         Kund:innen wollen
                       </span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-pink-500 mr-2">•</span>
-                      <span>
+                      <span className="text-gray-700">
                         KMU, die interne Abläufe automatisieren oder automatisch
                         Leads generieren wollen
                       </span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-pink-500 mr-2">•</span>
-                      <span>
+                      <span className="text-gray-700">
                         Kreative, Dienstleisterinnen & alle, die smart wachsen
                         wollen – mit einem charmanten Chatbot an ihrer Seite
                       </span>
