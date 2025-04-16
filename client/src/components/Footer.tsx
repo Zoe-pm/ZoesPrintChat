@@ -189,7 +189,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <ChatWidget isOpen={false} setIsOpen={() => {}} />
+     
     </footer>
   );
 }
