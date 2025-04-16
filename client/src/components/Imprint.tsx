@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export default function Imprint() {
@@ -29,7 +30,7 @@ export default function Imprint() {
           </button>
         </div>
 
-        <div className="text-gray-700 space-y-4">
+        <div className="text-gray-700 space-y-6">
           <div>
             <h3 className="font-bold mb-2">Angaben gemäß § 5 TMG</h3>
             <p>Zoë Bahati Hagen</p>
@@ -39,18 +40,30 @@ export default function Imprint() {
 
           <div>
             <h3 className="font-bold mb-2">Kontakt</h3>
-            <p>Telefon: +49 (0) 171986277</p>
-            <p>E-Mail: zoe-kiconsulting(at)pm.me</p>
+            <p>Telefon: 0171 / 9862773</p>
+            <p>E-Mail: zoe-kiconsulting@pm.me</p>
+          </div>
+
+          <div>
+            <h3 className="font-bold mb-2">Rechtsform</h3>
+            <p>Einzelunternehmen (Kleinunternehmer nach §19 UStG)</p>
           </div>
 
           <div>
             <h3 className="font-bold mb-2">Umsatzsteuer</h3>
-            <p>Umsatzsteuerbefreit gemäß § 19 UStG (Kleinunternehmerin)</p>
+            <p>Gemäß §19 UStG erhebe ich keine Umsatzsteuer und weise diese folglich auch nicht aus (Kleinunternehmerregelung).</p>
           </div>
 
           <div>
-            <h3 className="font-bold mb-2">Verbraucherstreitbeilegung/Universalschlichtungsstelle</h3>
-            <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            <h3 className="font-bold mb-2">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+            <p>Zoë Bahati Hagen</p>
+            <p>Jägerweg 28</p>
+            <p>13503 Berlin</p>
+          </div>
+
+          <div>
+            <h3 className="font-bold mb-2">Haftungshinweis</h3>
+            <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
           </div>
         </div>
       </div>
