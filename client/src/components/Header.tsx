@@ -57,31 +57,31 @@ export default function Header({
           <nav className="hidden md:flex items-center space-x-6">
             <button
               onClick={() => window.location.href = "/"}
-              className="font-heading font-medium hover:text-primary transition-all"
+              className="font-heading font-medium text-gray-700 hover:text-primary transition-all"
             >
               Home
             </button>
             <button
               onClick={() => handleNavClick("features")}
-              className="font-heading font-medium hover:text-primary transition-all"
+              className="font-heading font-medium text-gray-700 hover:text-primary transition-all"
             >
               Services
             </button>
             <button
               onClick={() => handleNavClick("how-it-works")}
-              className="font-heading font-medium hover:text-primary transition-all"
+              className="font-heading font-medium text-gray-700 hover:text-primary transition-all"
             >
               Wie es funktioniert
             </button>
             <button
               onClick={() => handleNavClick("about")}
-              className="font-heading font-medium hover:text-primary transition-all"
+              className="font-heading font-medium text-gray-700 hover:text-primary transition-all"
             >
               Über uns
             </button>
             <button
               onClick={() => handleNavClick("contact")}
-              className="font-heading font-medium hover:text-primary transition-all"
+              className="font-heading font-medium text-gray-700 hover:text-primary transition-all"
             >
               Kontakt
             </button>
