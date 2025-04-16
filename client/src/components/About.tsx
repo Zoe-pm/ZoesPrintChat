@@ -48,7 +48,7 @@ export default function About() {
               <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-pink-100 to-purple-100 p-8">
                 <div className="text-center">
                   <div className="text-4xl mb-4">🌸</div>
-                  <h3 className="font-heading font-bold text-2xl mb-4">
+                  <h3 className="font-heading font-bold text-2xl mb-4 text-gray-700">
                     Für wen ist das was?
                   </h3>
                   <ul className="space-y-3 text-left">
