@@ -91,14 +91,14 @@ export default function About() {
               Hey du! Schön, dass du da bist. ✨
             </div>
             <p className="text-gray-600 mb-4">
-              Ich bin Zoe – Beraterin für clevere KI-Lösungen mit
-              Persönlichkeit. Ich baue maßgeschneiderte Chatbots, die dein Team
+              Wir sind Zoe – Beraterin für clevere KI-Lösungen mit
+              Persönlichkeit. Wir bauen maßgeschneiderte Chatbots, die dein Team
               entlasten, deine Kunden begeistern und dir Zeit sparen – ganz ohne
               Hokuspokus.
             </p>
             <p className="text-gray-600 mb-6">
               Ob Terminbuchung, Kundenservice, interne Prozesse oder einfach
-              smarte Unterstützung rund um die Uhr: Meine Chatbots sind wie
+              smarte Unterstützung rund um die Uhr: Unsere Chatbots sind wie
               kleine digitale Assistentinnen – freundlich, effizient und genau
               auf dich abgestimmt.
             </p>

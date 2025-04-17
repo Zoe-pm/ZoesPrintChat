@@ -89,7 +89,7 @@ export default function Hero() {
               </ul>
               <div className="mt-6 pt-4 border-t border-white/20">
                 <p className="font-medium">
-                  Sag mir, was du brauchst – wir bauen's leicht & schön
+                  Sag uns, was du brauchst – wir bauen's leicht & schön
                 </p>
               </div>
             </div>

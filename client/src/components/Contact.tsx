@@ -130,7 +130,7 @@ export default function Contact() {
                 </svg>
               </div>
               <p className="text-gray-700 mb-4">
-                Nutze die Chat-Box in der unteren rechten Ecke, um direkt mit mir in Kontakt zu treten. Ich antworte in der Regel innerhalb von 24 Stunden.
+                Nutze die Chat-Box in der unteren rechten Ecke, um direkt mit uns in Kontakt zu treten. Wir antworten in der Regel innerhalb von 24 Stunden.
               </p>
               <p className="text-gray-600 text-sm">
                 Die Chat-Box ist rund um die Uhr für deine Anfragen verfügbar und die einfachste Möglichkeit, mir deine Ideen und Fragen mitzuteilen.
