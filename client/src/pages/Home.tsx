@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import Imprint from "@/components/Imprint";
 import Datenschutz from "@/components/Datenschutz";
 import { useState } from "react";
+import ChatWidget from "@/components/ChatWidget";
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,6 +34,7 @@ export default function Home() {
         <Datenschutz />
       </main>
       <Footer />
+      <ChatWidget />
     </div>
   );
 }
