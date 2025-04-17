@@ -12,7 +12,7 @@ export default function KIHinweis() {
             <div>
               <h3 className="text-xl md:text-2xl font-heading font-bold text-gray-800 mb-3">Hinweis zur KI-Nutzung</h3>
               <p className="text-gray-600 mb-3">
-                Unsere Chatbots und Automatisierungslösungen nutzen fortschrittliche KI-Technologie wie ChatGPT, Ollama (lokal) und n8n, um dir schneller und effizienter zu helfen.
+                Unsere Chatbots und Automatisierungslösungen nutzen fortschrittliche KI-Technologie wie LLMs, ChatGPT oder Ollama (lokal) und n8n, um dir schneller und effizienter zu helfen.
               </p>
               <p className="text-gray-600">
                 Dabei achten wir auf Datenschutz, Transparenz und faire Nutzung – deine Daten werden mit größter Sorgfalt behandelt und nicht für Werbezwecke weiterverwendet.

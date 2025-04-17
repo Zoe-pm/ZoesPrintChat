@@ -13,7 +13,7 @@ export default function Hero() {
               Clever. Charmant. Chatbot.
             </h2>
             <p className="text-lg md:text-xl opacity-90 mb-8">
-              Dein individueller KI-Bot wartet schon!
+              Dein individueller 24/7 KI-Bot wartet schon!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button
@@ -65,22 +65,23 @@ export default function Hero() {
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
                   <span>
-                    Individuelle RAGbots (Retriever + Chatbot-Frontend)
+                    Echtzeit‑Datenzugriff:RAG‑Bots holen alle Antworten aus deinem Wissen.
                   </span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>LLM-Lösungen mit ChatGPT oder lokal </span>
+                  <span>Flexible KI‑Modelle: ChatGPT oder deine firmeneigene Lösung – du entscheidest. </span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
                   <span>
-                    Auf dich zugeschnittene Automatisierungen mit voller Gestaltungsfreiheit und Kontrolle
+                    Automatisierte intelligente Workflows: Spare Zeit und Kosten bei wiederkehrenden Anfragen
                   </span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>Vektor-Datenbanken (z.B. für Wissens-Chats)</span>
+                    <span>
+                      Präzise Antworten: Vektor‑Datenbanken für kontextgenaue Ergebnisse.</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
