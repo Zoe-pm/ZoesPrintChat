@@ -25,7 +25,7 @@ export default function ChatWidget() {
     if (!input.trim()) return;
 
     const userMsg = { text: input, sender: "user" as const };
-    setMessages((prev) => [...prev, userMsg]);
+    setMessages(prev => [...prev, { text: input, sender: "user" }]);
     setInput("");
     setIsLoading(true);
 
@@ -33,19 +33,26 @@ export default function ChatWidget() {
       const res = await fetch("https://zoebahati.app.n8n.cloud/webhook/fd03b457-76f0-409a-ae7d-e9974b6e807c/chat", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ input: input }),
-      });
-      const data = await res.json();
-      console.log("Chat response:", data);
+          "Content-Type": "application/json", 
+          },
+          body: JSON.stringify({ input }),
+        }
+      );
+      const raw = await res.text();
+      console.log("Raw response:", raw);
+      const answer = raw.replace(/^==/, "").trim();
+      
       const botMsg = {
-        text: data.message || data.text || "Ich verstehe Ihre Anfrage. Wie kann ich Ihnen weiter helfen?",
+        text: answer || "Ups, da ist etwas schiefgelaufen.",
         sender: "bot" as const,
       };
       setMessages((prev) => [...prev, botMsg]);
-    } catch {
-      setMessages((prev) => [...prev, { text: "Fehler beim Senden.", sender: "bot" }]);
+    } catch (err) {
+      console.error(err);
+      setMessages((prev) => [
+        ...prev,
+        { text: "Fehler beim Senden.", sender: "bot" },
+      ]);
     } finally {
       setIsLoading(false);
     }
