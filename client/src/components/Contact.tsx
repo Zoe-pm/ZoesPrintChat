@@ -138,10 +138,9 @@ export default function Contact() {
             </div>
             
             <button 
-              onClick={() => document.getElementById('chat')?.querySelector('button')?.click()}
               className="bg-gradient-to-r from-primary to-purple-500 text-white py-3 px-8 rounded-full font-heading font-bold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 w-full"
             >
-              Chat öffnen
+              Contact Us
             </button>
           </div>
         </div>
