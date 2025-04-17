@@ -30,7 +30,7 @@ export default function ChatWidget() {
     setIsLoading(true);
 
     try {
-      const res = await fetch("https://zoebahati.app.n8n.cloud/webhook/df8f156c-bbaa-4bdd-b797-1820544069e7/chat", {
+      const res = await fetch("https://zoebahati.app.n8n.cloud/webhook/fd03b457-76f0-409a-ae7d-e9974b6e807c/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
