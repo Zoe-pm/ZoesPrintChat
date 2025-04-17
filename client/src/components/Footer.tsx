@@ -12,7 +12,7 @@ export default function Footer() {
                 <span className="text-xs font-bold">KI</span>
               </div>
               <h3 className="text-xl font-heading font-bold">
-                <span className="text-white">Zoe's</span> KI Toolbox
+                <span className="text-white">Zoë's</span> KI Toolbox
               </h3>
             </div>
             <p className="text-white/80 mb-6">
@@ -105,7 +105,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-heading font-bold mb-6">
-              Meine Leistungen
+              Leistungen
             </h4>
             <ul className="space-y-3">
               <li>

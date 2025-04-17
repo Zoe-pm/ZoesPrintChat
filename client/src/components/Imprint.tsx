@@ -63,7 +63,8 @@ export default function Imprint() {
 
           <div>
             <h3 className="font-bold mb-2">Haftungshinweis</h3>
-            <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+            <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+            Diese Seite ist mit KI generiert</p>
           </div>
         </div>
       </div>

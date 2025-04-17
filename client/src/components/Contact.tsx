@@ -66,7 +66,7 @@ export default function Contact() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">💌 Willkommen bei Zoe's KI Toolbox</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">💌 Willkommen bei Zoë's KI Toolbox</h2>
             <p className="text-gray-600 mb-8">
               Du hast Fragen, Ideen oder willst einfach mal plaudern? Sag mir, wie ich dir helfen kann.
             </p>
@@ -98,7 +98,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-heading font-bold text-gray-800 mb-1">Email</h4>
-                  <p className="text-gray-600">zoe-kiconsulting@pm.me</p>
+                  <p className="text-gray-600">zoe-kiconsulting(at)pm.me</p>
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Contact() {
           </div>
           
           <div className="bg-gray-50 rounded-2xl p-6 md:p-8 shadow-md">
-            <h3 className="text-2xl font-heading font-bold text-gray-800 mb-6">Kontaktiere mich direkt ✨</h3>
+            <h3 className="text-2xl font-heading font-bold text-gray-800 mb-6">Kontaktiere uns direkt ✨</h3>
             
             <div className="mb-8 text-center">
               <div className="w-20 h-20 rounded-full bg-gradient-to-r from-primary to-purple-500 mx-auto flex items-center justify-center text-white mb-4">
@@ -130,10 +130,10 @@ export default function Contact() {
                 </svg>
               </div>
               <p className="text-gray-700 mb-4">
-                Nutze die Chat-Box in der unteren rechten Ecke, um direkt mit uns in Kontakt zu treten. Wir antworten in der Regel innerhalb von 24 Stunden.
+                Nutze den Chat-Bot in der unteren rechten Ecke, um direkt mit uns in Kontakt zu treten.
               </p>
               <p className="text-gray-600 text-sm">
-                Die Chat-Box ist rund um die Uhr für deine Anfragen verfügbar und die einfachste Möglichkeit, mir deine Ideen und Fragen mitzuteilen.
+                Der Chat-Bot ist rund um die Uhr für deine Anfragen verfügbar und die einfachste Möglichkeit, uns deine Ideen und Fragen mitzuteilen.
               </p>
             </div>
             

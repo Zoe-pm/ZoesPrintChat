@@ -23,7 +23,7 @@ export default function About() {
       icon: faCheck,
       title: "Ich lasse Dich nicht allein",
       description:
-        "zuverlässiger Service- ich bin auch nach der Implementierung für dich da & erreichbar!",
+        "zuverlässiger Service- wir sind auch nach der Implementierung für dich da & erreichbar!",
     },
     {
       icon: faCoins,
@@ -70,7 +70,7 @@ export default function About() {
                       <span className="text-pink-500 mr-2">•</span>
                       <span className="text-gray-700">
                         Kreative, Dienstleisterinnen & alle, die smart wachsen
-                        wollen – mit einem charmanten Chatbot an ihrer Seite
+                        wollen – mit einem charmanten Chatbot oder workflows an ihrer Seite
                       </span>
                     </li>
                   </ul>
@@ -91,7 +91,7 @@ export default function About() {
               Hey du! Schön, dass du da bist. ✨
             </div>
             <p className="text-gray-600 mb-4">
-              Wir sind Zoe – Beraterin für clevere KI-Lösungen mit
+              Wir sind Zoe´s KI-Toolbox – Beraterung für clevere KI-Lösungen mit
               Persönlichkeit. Wir bauen maßgeschneiderte Chatbots, die dein Team
               entlasten, deine Kunden begeistern und dir Zeit sparen – ganz ohne
               Hokuspokus.

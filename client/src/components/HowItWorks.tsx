@@ -16,7 +16,7 @@ export default function HowItWorks() {
     {
       number: 3,
       title: "Entwicklung",
-      description: "Wir programmieren deinen Chatbot mit den gewünschten Funktionen und trainieren ihn mit deinem Wissen."
+      description: "Wir programmieren deinen Chatbot oder Workflow mit den gewünschten Funktionen und trainieren sie mit deinem Wissen."
     },
     {
       number: 4,

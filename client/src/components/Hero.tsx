@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="z-10">
             <h1 className="text-4xl md:text-5xl font-heading font-bold leading-tight mb-4">
-              Willkommen bei Zoe's KI Toolbox
+              Willkommen bei Zoë's KI Toolbox
             </h1>
             <h2 className="text-2xl md:text-3xl font-heading opacity-90 mb-4">
               Clever. Charmant. Chatbot.
@@ -59,7 +59,7 @@ export default function Hero() {
           <div className="relative z-10">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-6 border border-white/20">
               <h3 className="font-heading font-bold text-2xl mb-4">
-                Was ich für dich baue:
+                Was wir für dich bauen:
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-center">
@@ -75,7 +75,7 @@ export default function Hero() {
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
                   <span>
-                    Automatisierungen mit voller Daten- und Kostenkontrolle
+                    Auf dich zugeschnittene Automatisierungen mit voller Gestaltungsfreiheit und Kontrolle
                   </span>
                 </li>
                 <li className="flex items-center">
@@ -84,7 +84,7 @@ export default function Hero() {
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
-                  <span>Fokus auf Datenschutz & volle Kostenkontrolle</span>
+                  <span>Fokus auf Datenschutz & voller Kostenkontrolle</span>
                 </li>
               </ul>
               <div className="mt-6 pt-4 border-t border-white/20">

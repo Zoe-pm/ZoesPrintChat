@@ -49,7 +49,7 @@ export default function Header({
               <span className="text-xs font-bold">KI</span>
             </div>
             <h1 className="text-2xl font-heading font-bold text-gray-800">
-              <span className="text-primary">Zoe's</span> KI Toolbox
+              <span className="text-primary">Zoë's</span> KI Toolbox
             </h1>
           </div>
 
