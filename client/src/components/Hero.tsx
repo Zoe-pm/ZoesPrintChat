@@ -65,7 +65,7 @@ export default function Hero() {
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
                   <span>
-                    Echtzeit‑Datenzugriff:RAG‑Bots holen alle Antworten aus deinem Wissen.
+                    Echtzeit‑Datenzugriff: RAG‑Bots holen alle Antworten aus deinem Wissen.
                   </span>
                 </li>
                 <li className="flex items-center">
