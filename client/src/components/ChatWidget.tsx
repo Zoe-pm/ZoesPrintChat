@@ -30,19 +30,22 @@ export default function ChatWidget() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("/api/chat", {
+      const res = await fetch("https://zoebahati.app.n8n.cloud/webhook/fd03b457-76f0-409a-ae7d-e9974b6e807c/chat", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ message: input }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      const botMsg = await response.json();
+          "Content-Type": "application/json", 
+          },
+          body: JSON.stringify({ input }),
+        }
+      );
+      const raw = await res.text();
+      console.log("Raw response:", raw);
+      const answer = raw.replace(/^==/, "").trim();
+      
+      const botMsg = {
+        text: answer || "Ups, da ist etwas schiefgelaufen.",
+        sender: "bot" as const,
+      };
       setMessages((prev) => [...prev, botMsg]);
     } catch (err) {
       console.error(err);
