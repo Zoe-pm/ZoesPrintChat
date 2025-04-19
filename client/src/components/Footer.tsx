@@ -1,6 +1,5 @@
 
 import React from "react";
-import ChatWidget from "./ChatWidget";
 
 export default function Footer() {
   return (
