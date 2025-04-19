@@ -28,30 +28,21 @@ const App = () => {
   useEffect(() => {
     createChat({
       webhookUrl: 'https://zoebahati.app.n8n.cloud/webhook/fd03b457-76f0-409a-ae7d-e9974b6e807c/chat',
-      webhookConfig: {
-        method: 'POST',
-        headers: {}
-      },
       target: '#n8n-chat',
-      mode: 'window',
-      chatInputKey: 'chatInput',
-      chatSessionKey: 'sessionId',
-      metadata: {},
-      showWelcomeScreen: false,
-      defaultLanguage: 'en',
+      mode: 'floating',
+      defaultLanguage: 'de',
       initialMessages: [
-        'Ich beantworte dir Fragen zu uns und unserem Angebot',
-        ''
+        'Ich beantworte dir Fragen zu uns und unserem Angebot'
       ],
       i18n: {
-        en: {
+        de: {
           title: "Zoë´s Chatbot",
           subtitle: "24/7 für Dich am Start",
           footer: 'Schön dass du da bist!',
           getStarted: 'Frag mich was!',
           inputPlaceholder: 'Erzähl mir...',
-        },
-      },
+        }
+      }
     });
   }, []);
 

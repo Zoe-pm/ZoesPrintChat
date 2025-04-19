@@ -4,17 +4,17 @@
 @tailwind utilities;
 
 :root {
-  --chat--color-primary: #B8436A;
-  --chat--color-primary-shade-50: #DB4061;
-  --chat--color-primary-shade-100: #CF3C5C;
-  --chat--color-secondary: #D48CC6;
-  --chat--color-secondary-shade-50: #EFA4E1;
+  --chat--color-primary: #7F38A8;
+  --chat--color-primary-shade-50: #6D2F91;
+  --chat--color-primary-shade-100: #5B277A;
+  --chat--color-secondary: #C04BD9;
+  --chat--color-secondary-shade-50: #B042C2;
   --chat--color-white: #ffffff;
-  --chat--color-light: #FEC7B7;
-  --chat--color-light-shade-50: #FBC5C3;
-  --chat--color-light-shade-100: #C04BD9;
-  --chat--color-medium: #C04BD9;
-  --chat--color-dark: #7F38A8;
+  --chat--color-light: #F8F0FC;
+  --chat--color-light-shade-50: #F3E8FA;
+  --chat--color-light-shade-100: #ECD5F6;
+  --chat--color-medium: #D48CC6;
+  --chat--color-dark: #4A1D6E;
   --chat--color-disabled: #777980;
   --chat--color-typing: #404040;
 
