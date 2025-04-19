@@ -1,4 +1,4 @@
-// Placeholder empty component 
+
 export default function ChatWidget() {
-  return null;
+  return <div id="n8n-chat" />;
 }
