@@ -7,6 +7,9 @@ import Home from "@/pages/Home";
 import ChatbotPage from "@/pages/ChatbotPage";
 import ChatbotDemo1 from "@/pages/ChatbotDemo1";
 import ChatbotDemo2 from "@/pages/ChatbotDemo2";
+import { useEffect } from 'react';
+import '@n8n/chat/style.css';
+import { createChat } from '@n8n/chat';
 
 function Router() {
   return (
@@ -20,13 +23,19 @@ function Router() {
   );
 }
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    createChat({
+      webhookUrl: 'https://zoebahati.app.n8n.cloud/webhook/fd03b457-76f0-409a-ae7d-e9974b6e807c/chat'
+    });
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <Router />
       <Toaster />
     </QueryClientProvider>
   );
-}
+};
 
 export default App;

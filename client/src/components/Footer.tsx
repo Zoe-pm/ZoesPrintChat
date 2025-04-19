@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+
+import React from "react";
 import ChatWidget from "./ChatWidget";
 
 export default function Footer() {
@@ -189,20 +190,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    
     </footer>
-    // App.tsx
-    import { useEffect } from 'react';
-    import '@n8n/chat/style.css';
-    import { createChat } from '@n8n/chat';
-    export const App = () => {
-      useEffect(() => {
-        createChat({
-          webhookUrl: 'https://zoebahati.app.n8n.cloud/webhook/fd03b457-76f0-409a-ae7d-e9974b6e807c/chat'
-        });
-      }, []);
-
-      return (<div></div>);
-    };
   );
 }
