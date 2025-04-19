@@ -59,13 +59,13 @@ export default function Hero() {
           <div className="relative z-10">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-6 border border-white/20">
               <h3 className="font-heading font-bold text-2xl mb-4">
-                Was wir für dich bauen:
+                Wir bieten Dir:
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
                   <span>
-                    Echtzeit‑Datenzugriff: RAG‑Bots holen alle Antworten aus deinem Wissen.
+                    Schulungen & Workshops: wie spare ich Zeit mit KI in meinem Business
                   </span>
                 </li>
                 <li className="flex items-center">
@@ -81,7 +81,7 @@ export default function Hero() {
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
                     <span>
-                      Präzise Antworten: Vektor‑Datenbanken für kontextgenaue Ergebnisse.</span>
+                      Präzise automatisierte Antworten: Vektor‑Datenbanken für kontextgenaue Ergebnisse.</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-3 h-3 rounded-full bg-white mr-3"></div>
