@@ -40,16 +40,16 @@ const App = () => {
       showWelcomeScreen: false,
       defaultLanguage: 'en',
       initialMessages: [
-        'Hi there! 👋',
-        'My name is Nathan. How can I assist you today?'
+        'Ich beantworte dir Fragen zu uns und unserem Angebot',
+        ''
       ],
       i18n: {
         en: {
-          title: 'Hi there! 👋',
-          subtitle: "Start a chat. We're here to help you 24/7.",
-          footer: '',
-          getStarted: 'New Conversation',
-          inputPlaceholder: 'Type your question..',
+          title: "Zoë´s Chatbot",
+          subtitle: "24/7 für Dich am Start",
+          footer: 'Schön dass du da bist!',
+          getStarted: 'Frag mich was!',
+          inputPlaceholder: 'Erzähl mir...',
         },
       },
     });
