@@ -17,7 +17,7 @@ export default function Testimonials() {
     {
       quote: "Als Beraterin konnte ich mit meinem persönlichen RAGbot meinen Kundenstamm verdoppeln. Er beantwortet Erstanfragen, qualifiziert Leads und ich kann mich auf die wichtigen Gespräche konzentrieren.",
       name: "Sophia Berger",
-      avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       rating: 5
     }
   ];
@@ -29,7 +29,7 @@ export default function Testimonials() {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-800 mb-4">KI mit Herz & Hirn</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">Erfahrungen von Menschen, die ihre Geschäftsprozesse mit individuellen KI-Assistenten optimiert haben.</p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
