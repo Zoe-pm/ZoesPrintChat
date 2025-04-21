@@ -91,7 +91,7 @@ export default function About() {
               Hey du! Schön, dass du da bist. ✨
             </div>
             <p className="text-gray-600 mb-4">
-              Wir sind Zoe´s KI-Toolbox – Beraterung für clevere KI-Lösungen mit
+              Wir sind Zoe´s KI-Toolbox – Beratung für clevere KI-Lösungen mit
               Persönlichkeit. Wir bauen maßgeschneiderte Chatbots, die dein Team
               entlasten, deine Kunden begeistern und dir Zeit sparen – ganz ohne
               Hokuspokus.
