@@ -29,11 +29,11 @@ export default function TestimonialCard({ quote, name, avatar, rating }: Testimo
         <p className="text-gray-600 mb-6">{quote}</p>
         
         <div className="flex items-center">
-          <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+          <div className="w-12 h-12 rounded-full overflow-hidden mr-4 border-2 border-primary/20">
             <img 
               src={avatar} 
               alt={`${name} avatar`} 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-full"
             />
           </div>
           <div>
