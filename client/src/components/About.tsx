@@ -48,7 +48,7 @@ export default function About() {
               <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-pink-100 to-purple-100 p-8">
                 <div className="mb-8 flex justify-center">
                   <img 
-                    src="/attached_assets/Zoe Website.jpeg" 
+                    src="Zoe Website.jpeg" 
                     alt="Zoë Bahati Hagen" 
                     className="rounded-full w-48 h-48 object-cover border-4 border-white shadow-lg"
                   />
