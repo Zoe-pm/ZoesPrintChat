@@ -57,6 +57,13 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative z-10">
+            <div className="mb-8 flex justify-center">
+              <img 
+                src="/Zoe Website.jpeg"
+                alt="Zoë Bahati Hagen"
+                className="w-64 h-64 rounded-full object-cover border-4 border-white/30 shadow-xl"
+              />
+            </div>
             <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-6 border border-white/20">
               <h3 className="font-heading font-bold text-2xl mb-4">
                 Wir bieten Dir:
