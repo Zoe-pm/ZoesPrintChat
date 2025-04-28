@@ -45,9 +45,11 @@ export default function Header({
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-purple-500 flex items-center justify-center text-white mr-3">
-              <span className="text-xs font-bold">KI</span>
-            </div>
+            <img 
+              src="/Zoe Website.jpeg"
+              alt="Zoë Bahati Hagen"
+              className="w-12 h-12 rounded-full object-cover border-2 border-primary mr-3"
+            />
             <h1 className="text-2xl font-heading font-bold text-gray-800">
               <span className="text-primary">Zoë's</span> KI Toolbox
             </h1>
