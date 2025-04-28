@@ -43,18 +43,14 @@ export default function Header({
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          {/* Logo and Profile Picture */}
+          {/* Logo */}
           <div className="flex items-center">
-            <div className="flex items-center">
-              <img 
-                src="/attached_assets/Zoe Website.jpeg"
-                alt="Zoë Bahati Hagen"
-                className="w-12 h-12 rounded-full object-cover border-2 border-primary/20 mr-3"
-              />
-              <h1 className="text-2xl font-heading font-bold text-gray-800">
-                <span className="text-primary">Zoë's</span> KI Toolbox
-              </h1>
+            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-purple-500 flex items-center justify-center text-white mr-3">
+              <span className="text-xs font-bold">KI</span>
             </div>
+            <h1 className="text-2xl font-heading font-bold text-gray-800">
+              <span className="text-primary">Zoë's</span> KI Toolbox
+            </h1>
           </div>
 
           {/* Navigation */}
