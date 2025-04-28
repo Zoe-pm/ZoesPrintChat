@@ -123,6 +123,13 @@ export default function Contact() {
             <h3 className="text-2xl font-heading font-bold text-gray-800 mb-6">Kontaktiere uns direkt ✨</h3>
             
             <div className="mb-8 text-center">
+              <div className="mb-6 flex justify-center">
+                <img 
+                  src="/Zoe Website.jpeg"
+                  alt="Zoë Bahati Hagen"
+                  className="w-32 h-32 rounded-full object-cover border-4 border-primary/30 shadow-xl"
+                />
+              </div>
               <p className="text-gray-700 mb-4">
                 Nutze den Chat-Bot in der unteren rechten Ecke, um direkt mit uns in Kontakt zu treten.
               </p>
